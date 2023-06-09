@@ -27,11 +27,12 @@ intended to give authors enough information to create and modify the
 documents productively. We follow the conventions outlines in the 
 link, along with some additional METplus Component specific conventions:
 
-**Bold**
+Bold
+____
 
   * To make text bold use 2 asterisks before and after the bold section
       
-      * Example:  \*\*This is bolded\*\*
+      * Example:  \*\*This is bolded\*\* will look like this on the web:
       * **This is bolded**
   * Variables (e.g. **MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME**, etc.)
   * Filenames (**line_defaults.yaml, contour_defaults.yaml, defaults.conf**, etc.)
@@ -39,7 +40,7 @@ link, along with some additional METplus Component specific conventions:
     use \mathbf
     Then put what is needed in bolded brackets.
     1, 2, 3, 4, ... :math:\mathbf{2^{n-1}}
-    `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_
+    `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
 
 The following Sphinx modules are required to generate the necessary
