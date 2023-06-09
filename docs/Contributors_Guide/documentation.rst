@@ -28,7 +28,7 @@ documents productively. We follow the conventions outlines in the
 link, along with some additional METplus Component specific conventions:
 
 Bold
-____
+----
 
   * To make text bold use 2 asterisks before and after the bold section
       
