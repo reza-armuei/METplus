@@ -22,6 +22,25 @@ The majority of the documentation is created using the Sphinx documentation
 generator tool, which was originally created for Python documentation.
 The documentation is created using
 `reStructuredText (rst) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_.
+This link provides a brief introduction to reST concepts and syntax, 
+intended to give authors enough information to create and modify the 
+documents productively. We follow the conventions outlines in the 
+link, along with some additional METplus Component specific conventions:
+
+**Bold**
+
+  * To make text bold use 2 asterisks before and after the bold section
+      * Example:  \*\*I am bolded\*\*
+      * **I am bolded**
+  * Variables (e.g. MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME, etc.)
+  * Filenames (line_defaults.yaml, contour_defaults.yaml, defaults.conf, etc.)
+  * Math equations
+    use \mathbf
+    Then put what you need bolded in brackets.
+    1, 2, 3, 4, ... :math:\mathbf{2^{n-1}}
+    Referencing math equations
+    https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref
+
 
 The following Sphinx modules are required to generate the necessary
 documentation:
