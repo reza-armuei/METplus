@@ -30,16 +30,16 @@ link, along with some additional METplus Component specific conventions:
 **Bold**
 
   * To make text bold use 2 asterisks before and after the bold section
-      * Example:  \*\*I am bolded\*\*
-      * **I am bolded**
-  * Variables (e.g. MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME, etc.)
-  * Filenames (line_defaults.yaml, contour_defaults.yaml, defaults.conf, etc.)
+      
+      * Example:  \*\*This is bolded\*\*
+      * **This is bolded**
+  * Variables (e.g. **MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME**, etc.)
+  * Filenames (**line_defaults.yaml, contour_defaults.yaml, defaults.conf**, etc.)
   * Math equations
     use \mathbf
-    Then put what you need bolded in brackets.
+    Then put what is needed in bolded brackets.
     1, 2, 3, 4, ... :math:\mathbf{2^{n-1}}
-    Referencing math equations
-    https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref
+    `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_
 
 
 The following Sphinx modules are required to generate the necessary
