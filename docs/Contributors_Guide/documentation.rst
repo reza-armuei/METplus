@@ -45,15 +45,15 @@ Items to Bold
 Items in Italics
 ----------------
 
-  * To italicize text use 1 asterisks before and after the italics section.
+  * To italicize text use 1 asterisk before and after the italics section.
       
       * Example:  \*This is in italics\* will look like this on the web:
       * *This is in italics*
   * Paths and Directories are italicized.
-   *If it is a full path and a file name, use italics. 
-   This was used a lot in METplotpy, 
-   example: *$METPLOTPY_SOURCE/METplotpy/test/ens_ss/ens_ss.data* 
-   * Italics for values to options.
+  * If it is a full path and a file name, use italics. 
+    This was used a lot in METplotpy, 
+    Example: *$METPLOTPY_SOURCE/METplotpy/test/ens_ss/ens_ss.data* 
+  * Italics for values to options.
 
 Sphinx modules
 --------------
