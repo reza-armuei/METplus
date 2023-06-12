@@ -62,9 +62,9 @@ Math equations
 Symbols
 -------
 
-  * The below will create a triangle in between the text.:
+  * The below will create a Delta triangle symbol:
   
-    * Eample: \:math\:`\\Delta`
+    * Eample: \:math\:\`\\Delta\`
     * :math:`\Delta`
 
 
