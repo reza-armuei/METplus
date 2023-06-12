@@ -52,27 +52,20 @@ Items in Italics
   
 Math equations
 --------------
-  * use \mathbf
+  * use :math:\mathbf
   * Then put what is needed in bolded brackets.
   
-     * \*\*1, 2, 3, 4, ...\*\* :math:\`\mathbf{2^{n-1}}\`
-     * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
-
-Bolding math equations
-use    \mathbf
-Then put what you need bolded in brackets.
-**1, 2, 3, 4, ...** :math:`\mathbf{2^{n-1}}`
-
-Referencing math equations
-https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref
+     * \*\*1, 2, 3, 4, ...\*\* :math:\`\mathbf{2^{n-1}}\`  will look like this on the web:
+     * **1, 2, 3, 4, ...** :math:`\mathbf{2^{n-1}}`
+  * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
 Symbols
 -------
 
 The below will create a triangle in between the text.:
-Text  :math:\`\Delta\` add more text here if needed
+Text  :math:`\\Delta` add more text here if needed
 
-  :math: `\Delta`
+  :math:`\Delta`
 
 
 Sphinx modules
