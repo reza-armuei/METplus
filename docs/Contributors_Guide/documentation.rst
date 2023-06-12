@@ -36,11 +36,6 @@ Items to Bold
       * **This is bolded**
   * Variables (e.g. **MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME**, etc.)
   * Filenames (**line_defaults.yaml, contour_defaults.yaml, defaults.conf**, etc.)
-  * Math equations
-    use \mathbf
-    Then put what is needed in bolded brackets.
-    1, 2, 3, 4, ... :math:\mathbf{2^{n-1}}
-    `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
 Items in Italics
 ----------------
@@ -54,6 +49,31 @@ Items in Italics
     This was used a lot in METplotpy, 
     Example: *$METPLOTPY_SOURCE/METplotpy/test/ens_ss/ens_ss.data* 
   * Italics for values to options.
+  
+Math equations
+--------------
+  * use \mathbf
+  * Then put what is needed in bolded brackets.
+  
+     * \*\*1, 2, 3, 4, ...\*\* :math:\`\mathbf{2^{n-1}}\`
+     * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
+
+Bolding math equations
+use    \mathbf
+Then put what you need bolded in brackets.
+**1, 2, 3, 4, ...** :math:`\mathbf{2^{n-1}}`
+
+Referencing math equations
+https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref
+
+Symbols
+-------
+
+The below will create a triangle in between the text.:
+Text  :math:\`\Delta\` add more text here if needed
+
+  :math: `\Delta`
+
 
 Sphinx modules
 --------------
