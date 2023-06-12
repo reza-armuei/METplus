@@ -64,7 +64,7 @@ Symbols
 
   * The below will create a Delta triangle symbol:
   
-    * Eample: \:math\:\`\\Delta\`
+    * Eample: :math\:\`\Delta\`
     * :math:`\Delta`
 
 
