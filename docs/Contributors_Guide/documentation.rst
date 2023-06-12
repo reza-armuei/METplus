@@ -62,10 +62,10 @@ Math equations
 Symbols
 -------
 
-The below will create a triangle in between the text.:
-Text  :math:`\\Delta` add more text here if needed
-
-  :math:`\Delta`
+  * The below will create a triangle in between the text.:
+  
+    * Eample: \:math\:`\\Delta`
+    * :math:`\Delta`
 
 
 Sphinx modules
