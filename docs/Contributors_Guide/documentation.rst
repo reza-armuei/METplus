@@ -55,7 +55,7 @@ Math equations
   * use :math:\mathbf
   * Then put what is needed in bolded brackets.
   
-     * \*\*1, 2, 3, 4, ...\*\* :math:\`\mathbf{2^{n-1}}\`  will look like this on the web:
+     * Example:  \*\*1, 2, 3, 4, ...\*\* :math:\`\mathbf{2^{n-1}}\` will look like this on the web:
      * **1, 2, 3, 4, ...** :math:`\mathbf{2^{n-1}}`
   * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
@@ -64,7 +64,7 @@ Symbols
 
   * The below will create a Delta triangle symbol:
   
-    * Eample: :math\:\`\Delta\`
+    * Eample:  :math\:\`\Delta\` will look like this on the web:
     * :math:`\Delta`
 
 
