@@ -27,10 +27,10 @@ intended to give authors enough information to create and modify the
 documents productively. We follow the conventions outlines in the 
 link, along with some additional METplus Component specific conventions:
 
-Bold
-----
+Items to Bold
+-------------
 
-  * To make text bold use 2 asterisks before and after the bold section
+  * To make text bold use 2 asterisks before and after the bold section.
       
       * Example:  \*\*This is bolded\*\* will look like this on the web:
       * **This is bolded**
@@ -42,6 +42,21 @@ Bold
     1, 2, 3, 4, ... :math:\mathbf{2^{n-1}}
     `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
+Items in Italics
+----------------
+
+  * To italicize text use 1 asterisks before and after the italics section.
+      
+      * Example:  \*This is in italics\* will look like this on the web:
+      * *This is in italics*
+  * Paths and Directories are italicized.
+   *If it is a full path and a file name, use italics. 
+   This was used a lot in METplotpy, 
+   example: *$METPLOTPY_SOURCE/METplotpy/test/ens_ss/ens_ss.data* 
+   * Italics for values to options.
+
+Sphinx modules
+--------------
 
 The following Sphinx modules are required to generate the necessary
 documentation:
