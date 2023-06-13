@@ -27,6 +27,28 @@ intended to give authors enough information to create and modify the
 documents productively. We follow the conventions outlines in the 
 link, along with some additional METplus Component specific conventions:
 
+Defining Chapters and Sections
+------------------------------
+
+Chapter and section headers are created by underlining 
+the section title with one of the below punctuation characters.
+This must be EXACTLY as long as the text line or there will be a github error message:
+
+Here is an example of a chapter title:
+
+This is a chapter title
+\======================
+One line below must be left blank.
+
+Below is the convention that is used in the Python Developer’s Guide.
+
+  * # with overline, for parts
+  * with overline, for chapters
+  * = for sections
+  * - for subsections (this is a dash, not an underline.)
+  * ^ for subsubsections
+  * " for paragraphs (as of yet, this isn't used in the METplus documentation.)
+
 Items to Bold
 -------------
 
