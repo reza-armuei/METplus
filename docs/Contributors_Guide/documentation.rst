@@ -36,11 +36,9 @@ This must be EXACTLY as long as the text line or there will be a github error me
 
 Here is an example of a chapter title:
 
-\**********************
-
-This is a chapter title
-
-\**********************
+| \**********************
+| This is a chapter title
+| \**********************
 
 One line below must be left blank.
 
