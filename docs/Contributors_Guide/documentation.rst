@@ -99,13 +99,14 @@ Sphinx modules
 The following Sphinx modules are required to generate the necessary
 documentation:
 
-  * sphinx-2.2.0
-  * sphinx-gallery-0.7
-  * sphinx_rtd_theme-0.4.3
+  * sphinx-gallery==0.11.1
+  * sphinx==5.3.0
+  * sphinx-rtd-theme==1.2.0
+  * sphinx-design==0.3.0
 
 Which versions are being used by the current METplus release can be viewed
-by looking at either **environment.yml** or **requirements.txt**, both of which
-are found in the *METplus/* directory.  If the desire is to replicate all the
+by looking at either *METplus/environment.yml* or *METplus/docs/requirements.txt*.  
+If the desire is to replicate all the
 packages employed by METplus, please refer to :numref:`conda_env` of the
 Contributor's Guide.
 
