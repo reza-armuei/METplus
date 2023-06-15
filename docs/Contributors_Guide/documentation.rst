@@ -36,9 +36,9 @@ This must be EXACTLY as long as the text line or there will be a github error me
 
 Here is an example of a chapter title::
 
-  ***********************
-  This is a chapter title
-  ***********************
+  *************
+  Chapter Title
+  *************
 
 One line of whitespace below must be left blank or it won't work.
 
@@ -58,10 +58,9 @@ Items to Bold
   * To make text bold use 2 asterisks before and after the bold section.
     Example::  
     
-      **This is bolded** 
+      **Bolded text** 
       
-    will look like this on the web:
-    * **This is bolded**
+  * It will look like this on the web:  **Bolded text**
   * Variables (e.g. **MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME**, etc.)
   * Filenames (**line_defaults.yaml, contour_defaults.yaml, defaults.conf**, etc.)
 
@@ -71,10 +70,9 @@ Items in Italics
   * To italicize text use 1 asterisk before and after the italics section.
     Example::
       
-      *This is in italics* 
+      *Italicized text* 
       
-      will look like this on the web:
-      * *This is in italics*
+  * It will look like this on the web: *Italicized text*
   * Paths and Directories are italicized.
   * If it is a full path and a file name, use italics. 
     This was used a lot in METplotpy, 
@@ -89,9 +87,7 @@ Math equations
     
       **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
       
-    will look like this on the web:
-    * **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
-    
+  * It will look like this on the web: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
   * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
 Symbols
@@ -102,8 +98,7 @@ Symbols
     
       :math:`Delta` 
       
-    will look like this on the web:
-    * :math:`\Delta`
+  * It will look like this on the web: :math:`\Delta`
 
 
 Sphinx modules
