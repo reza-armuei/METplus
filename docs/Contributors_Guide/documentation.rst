@@ -89,8 +89,9 @@ Math equations
     
       **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
       
-      will look like this on the web:
-    * **1, 2, 3, 4, ...** :math:`\mathbf{2^{n-1}}`
+    will look like this on the web:
+    * **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
+    
   * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
 Symbols
@@ -101,7 +102,7 @@ Symbols
     
       :math:`Delta` 
       
-      will look like this on the web:
+    will look like this on the web:
     * :math:`\Delta`
 
 
