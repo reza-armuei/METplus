@@ -40,7 +40,7 @@ Here is an example of a chapter title::
   Chapter Title
   *************
 
-One line of whitespace below must be left blank or it won't work.
+Include one line of whitespace below the last line of asterisks or it won't work.
 
 Below is the convention that is used in the Python Developer’s Guide
 and METplus::
@@ -99,6 +99,29 @@ Symbols
       :math:`Delta` 
       
   * It will look like this on the web: :math:`\Delta`
+
+Command Line Command
+--------------------
+
+http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#literal-blocks
+
+For including commands for a command line, use the “literal block” syntax.
+Indent the line two spaces with two colons at the end of the sentence"::", 
+one line of white space below that,
+two indented spaces, "Write my command here" then one more line of
+white space. Example::
+
+  Some text::
+
+    Write my command here
+    
+It will look like this on the web:
+
+  Some Text::
+  
+    Write my command here
+
+Then continue writing on this line. Note there needs to be one line of whitespace above and below the command
 
 
 Sphinx modules
