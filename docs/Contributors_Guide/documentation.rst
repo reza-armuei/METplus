@@ -34,31 +34,34 @@ Chapter and section headers are created by underlining
 the section title with one of the below punctuation characters.
 This must be EXACTLY as long as the text line or there will be a github error message:
 
-Here is an example of a chapter title:
+Here is an example of a chapter title::
 
-| \**********************
-| This is a chapter title
-| \**********************
+  ***********************
+  This is a chapter title
+  ***********************
 
-One line below must be left blank.
+One line of whitespace below must be left blank or it won't work.
 
 Below is the convention that is used in the Python Developer’s Guide
-and METplus.
+and METplus::
 
-  * # with overline, for parts
-  * \* with overline, for chapters
-  * = for sections
-  * \- for subsections (this is a dash, not an underline.)
-  * ^ for subsubsections
-  * " for paragraphs (as of yet, this isn't used in the METplus documentation.)
+  * with overline, for chapters
+  = for sections
+  - for subsections (this is a dash, not an underline.)
+  ^ for subsubsections
+  " for paragraphs (as of yet, this isn't used in the METplus documentation.)
+  # with overline, for parts. This can be used for hidden comments in the code.
 
 Items to Bold
 -------------
 
   * To make text bold use 2 asterisks before and after the bold section.
+    Example::  
+    
+      **This is bolded** 
       
-      * Example:  \*\*This is bolded\*\* will look like this on the web:
-      * **This is bolded**
+    will look like this on the web:
+    * **This is bolded**
   * Variables (e.g. **MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME**, etc.)
   * Filenames (**line_defaults.yaml, contour_defaults.yaml, defaults.conf**, etc.)
 
@@ -66,8 +69,11 @@ Items in Italics
 ----------------
 
   * To italicize text use 1 asterisk before and after the italics section.
+    Example::
       
-      * Example:  \*This is in italics\* will look like this on the web:
+      *This is in italics* 
+      
+      will look like this on the web:
       * *This is in italics*
   * Paths and Directories are italicized.
   * If it is a full path and a file name, use italics. 
@@ -79,17 +85,23 @@ Math equations
 --------------
   * use :math:\mathbf
   * Then put what is needed in bolded brackets.
-  
-     * Example:  \*\*1, 2, 3, 4, ...\*\* :math:\`\mathbf{2^{n-1}}\` will look like this on the web:
-     * **1, 2, 3, 4, ...** :math:`\mathbf{2^{n-1}}`
+    Example::  
+    
+      **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
+      
+      will look like this on the web:
+    * **1, 2, 3, 4, ...** :math:`\mathbf{2^{n-1}}`
   * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
 Symbols
 -------
 
   * The below will create a Delta triangle symbol:
-  
-    * Eample:  \:math\:\`\Delta\` will look like this on the web:
+    Eample:: 
+    
+      :math:`Delta` 
+      
+      will look like this on the web:
     * :math:`\Delta`
 
 
