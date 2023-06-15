@@ -44,6 +44,7 @@ One line of whitespace below must be left blank or it won't work.
 
 Below is the convention that is used in the Python Developer’s Guide
 and METplus::
+  
   * with overline, for chapters
   = for sections
   - for subsections (this is a dash, not an underline.)
