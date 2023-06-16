@@ -201,7 +201,7 @@ If the link is in another chapter or document, use the example below.
 Please note, there is no space between text and the less than symbol "<".
 Example:
 
-  :ref:`Text to show up<reference_orig_name>`
+  :ref:`Text to show up<reference_orig_name>`  LISA fix this, nothing shows up because there is nothing to link to.
 
 Linking to METplus Use Cases (Python code)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -257,7 +257,7 @@ to look for the link in the glossary. Example::
 
   :term:`VARIABLE_NAME_HERE`
 
-This will link directly to the glossary. Her is some more information on 
+This will link directly to the glossary. Here is some more information on 
 `links to a glossary <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary.html#link-a-term-to-its-a-glossary-entry>`_.
 
 Links to External Web Pages
@@ -267,9 +267,9 @@ To link to an external web page, use the following syntax:
 `Link text <link_URL>`_  
 Example::
 
-  `DTC <http://https://dtcenter.org/>`_
+  `DTC <https://dtcenter.org/>`_
 
-The web link should look like this: `DTC <http://https://dtcenter.org/>`_
+The web link should look like this: `DTC <https://dtcenter.org/>`_
 
 The link can also be separated from the the target definition. 
 Example::
@@ -279,7 +279,6 @@ Example::
 
 The web link should look like this:
 Get the latest news at `DTC`_.
-  .. _DTC: https://dtcenter.org
 
 Sphinx modules
 --------------
