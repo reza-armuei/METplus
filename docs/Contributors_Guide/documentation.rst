@@ -166,6 +166,121 @@ It will look like this on the web:
 
 Here is some more information on `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>`_.
 
+Links
+-----
+
+Linking to another Section
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The original section being linked to will need an 
+".. _pick_a_reference_name" so it can be referenced
+in the next section.  Please change the text to something
+appropriate.  No spaces are allowed. Example::
+
+  .. _reference_orig_name:
+         must have blank line here
+  Original Name Section
+  ---------------------
+
+To add this link somewhere else use "\:ref:\`reference_orig_name`". 
+Please use backticks and note that the first underscore isn't used
+in the reference.
+Example::
+
+  :ref:`reference_orig_name`
+
+Or to have the (table, figure etc) number used numref will work.
+Example::
+
+  :numref:`reference_orig_name`
+
+Here is some more information on 
+`Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_
+
+If the link is in another chapter or document, use the example below.
+Please note, there is no space between text and the less than symbol "<".
+Example:
+
+  :ref:`Text to show up<reference_orig_name>`
+
+Linking to METplus Use Cases (Python code)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Linking to METplus Use Cases must be done with a web link.  
+Since the generated html file is from a python script, 
+the “\:ref:” command in sphinx can’t be used. 
+This example will use this METplus Use Case:
+https://metplus.readthedocs.io/en/latest/generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html#sphx-glr-generated-met-tool-wrapper-statanalysis-statanalysis-py.  
+The full web address is being shown above so it can be edited below.
+To make sure the web address is correct:
+
+  * This example will be called "TCStat: Basic Use Case"
+  * Remove this front portion from the web address before 
+    “generated”: https://metplus.readthedocs.io/en/latest
+  * Put a “../” in front of “generated”
+  * Also remove anything after “#”.  In this case:  
+    #sphx-glr-generated-met-tool-wrapper-statanalysis-statanalysis-py
+  * The web link should look like this example::
+
+    `TCStat: Basic Use Case <../generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html>`_
+  * It will look like this on the web page:
+    `TCStat: Basic Use Case <../generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html>`_
+
+Examples of the links can be seen in this 
+`table <https://metplus.readthedocs.io/en/latest/Users_Guide/overview.html#metplus-components-python-requirements>`_ 
+in the far right column.
+
+
+Linking to a table
+^^^^^^^^^^^^^^^^^^
+
+This is similar to linking to another section.
+Example::
+
+  .. _table_name_1:
+         (must have blank line here)
+  .. list-table:: table name one
+
+Then to reference this table::
+
+  :ref:`table_name_1`
+  
+This will link to the table.
+
+The web link should look like this: LISA UPDATE THIS
+
+Linking to a variable in the Glossary
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In this case, "\:term:" is used. This lets Sphinx know
+to look for the link in the glossary. Example::
+
+  :term:`VARIABLE_NAME_HERE`
+
+This will link directly to the glossary. Her is some more information on 
+`links to a glossary <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary.html#link-a-term-to-its-a-glossary-entry>`_.
+
+Links to External Web Pages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To link to an external web page, use the following syntax:
+`Link text <link_URL>`_  
+Example::
+
+  `DTC <http://https://dtcenter.org/>`_
+
+The web link should look like this: `DTC <http://https://dtcenter.org/>`_
+
+The link can also be separated from the the target definition. 
+Example::
+
+  Get the latest news at `DTC`_.
+  .. _DTC: https://dtcenter.org
+
+The web link should look like this:
+Get the latest news at `DTC`_.
+  .. _DTC: https://dtcenter.org
+
 Sphinx modules
 --------------
 
