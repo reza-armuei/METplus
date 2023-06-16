@@ -127,6 +127,39 @@ whitespace above and below the command.
 Here is some more information on 
 `literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>_`
 
+Creating Carriage Returns and New Lines
+---------------------------------------
+
+RST does not obey carriage returns. To get text to appear on 
+consecutive lines with no whitespace between, use the 
+“line block” syntax, which is to prepend each line with 
+the “|” symbol. Example::
+
+This text will
+Be
+Rendered
+All on a single
+Line like this
+
+It will look like this on the web:
+| This text will Be Rendered All on a single Line like this
+
+To keep the text on separate lines, use the "|" with a
+space at the beginning of each new line.  Example::
+
+| This text will
+| Be
+| Rendered
+| On separate lines
+| Like this
+
+| This text will
+| Be
+| Rendered
+| On separate lines
+| Like this
+
+Here is some more information on `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>_`
 
 Sphinx modules
 --------------
