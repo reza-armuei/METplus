@@ -115,7 +115,8 @@ white space. Example::
     Write my command here
     
     
-It will look like this on the web:
+It will look like this on the web (Please note, this will remove one
+of the 2 colons):
 
   Some text::
   
@@ -125,7 +126,7 @@ Then continue writing on this line. Note there needs to be one line of
 whitespace above and below the command.
 
 Here is some more information on 
-`literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>_`
+`literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>`_
 
 Creating Carriage Returns and New Lines
 ---------------------------------------
@@ -135,11 +136,11 @@ consecutive lines with no whitespace between, use the
 “line block” syntax, which is to prepend each line with 
 the “|” symbol. Example::
 
-This text will
-Be
-Rendered
-All on a single
-Line like this
+  This text will
+  Be
+  Rendered
+  All on a single
+  Line like this
 
 It will look like this on the web:
 | This text will Be Rendered All on a single Line like this
@@ -159,7 +160,7 @@ space at the beginning of each new line.  Example::
 | On separate lines
 | Like this
 
-Here is some more information on `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>_`
+Here is some more information on `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>`_
 
 Sphinx modules
 --------------
