@@ -117,7 +117,7 @@ white space. Example::
     
 It will look like this on the web:
 
-  Some Text::
+  Some text::
   
     Write my command here
 
@@ -125,7 +125,7 @@ Then continue writing on this line. Note there needs to be one line of
 whitespace above and below the command.
 
 Here is some more information on 
-'literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>_`
+`literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>_`
 
 
 Sphinx modules
