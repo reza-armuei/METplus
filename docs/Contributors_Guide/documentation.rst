@@ -32,13 +32,14 @@ Defining Chapters and Sections
 
 Chapter and section headers are created by underlining 
 the section title with one of the below punctuation characters.
-This must be EXACTLY as long as the text line or there will be a github error message:
+This must be EXACTLY as long as the text line or there will be a Github error message:
 
 Here is an example of a chapter title::
 
   *************
   Chapter Title
   *************
+  
 
 Include one line of whitespace below the last line of asterisks or it won't work.
 
@@ -85,7 +86,7 @@ Math equations
   * Then put what is needed in bolded brackets.
     Example::  
     
-      **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
+      :math:\mathbf **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
       
   * It will look like this on the web: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
   * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
@@ -103,8 +104,6 @@ Symbols
 Command Line Command
 --------------------
 
-http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#literal-blocks
-
 For including commands for a command line, use the “literal block” syntax.
 Indent the line two spaces with two colons at the end of the sentence"::", 
 one line of white space below that,
@@ -115,13 +114,18 @@ white space. Example::
 
     Write my command here
     
+    
 It will look like this on the web:
 
   Some Text::
   
     Write my command here
 
-Then continue writing on this line. Note there needs to be one line of whitespace above and below the command
+Then continue writing on this line. Note there needs to be one line of 
+whitespace above and below the command.
+
+Here is some more information on 
+'literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>_`
 
 
 Sphinx modules
