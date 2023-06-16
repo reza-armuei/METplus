@@ -142,26 +142,27 @@ the “|” symbol. Example::
   All on a single
   Line like this
 
-It will look like this on the web:
-
-| This text will Be Rendered All on a single Line like this
+It will look like this on the web: 
+This text will Be Rendered All on a single Line like this
 
 To keep the text on separate lines, use the "|" with a
 space at the beginning of each new line.  Example::
 
-One line of blank space above and below text 
+  One line of blank space above and below text 
+  
+  | This text will
+  | Be
+  | Rendered
+  | On separate lines
+  | Like this
 
-| This text will
-| Be
-| Rendered
-| On separate lines
-| Like this
+It will look like this on the web:
 
-| This text will
-| Be
-| Rendered
-| On separate lines
-| Like this
+  | This text will
+  | Be
+  | Rendered
+  | On separate lines
+  | Like this
 
 Here is some more information on `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>`_.
 
