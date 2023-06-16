@@ -53,6 +53,17 @@ and METplus::
   " for paragraphs (as of yet, this isn't used in the METplus documentation.)
   # with overline, for parts. This can be used for hidden comments in the code.
 
+If an underline is used with no text above or below it, 
+this will create a thin dividing line in the document.
+Example::
+
+  ___________________
+
+It will look like this on the web:
+
+_________________
+
+
 Items to Bold
 -------------
 
