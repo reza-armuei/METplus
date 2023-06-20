@@ -186,8 +186,8 @@ Linking to another Section
 The original section being linked to will need an 
 ".. _pick_a_reference_name" so it can be referenced
 in the next section.  In this case we will use the 
-:ref:`user_configuration_file` User Configuration File 
-located in the :ref:`install'` Installation Guide.
+:ref:`user_configuration_file`
+located in the :ref:`install`.
 Currently an example can be see of the link
 in the Getting Started Chapter section 
 :ref:`running-metplus`
@@ -199,8 +199,8 @@ Example Wrapper Use Case.  Example::
   =======================
          must have a blank line here
 
-To add this link somewhere else use "\:ref:\`user_configuration_file`". 
-Please use backticks and note that the first underscore isn't used
+To add this link somewhere else 
+please use backticks and note that the first underscore isn't used
 in the reference.
 Example::
 
@@ -218,13 +218,14 @@ It will look like this on the web.  This version shows the
 numbered section, not the name:  :numref:`user_configuration_file`
 
 Here is some more information on 
-`Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_
+`Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_.
 
-If the link is in another chapter or document, use the example below.
+If the link is in another chapter or document, and the a different name
+or title would be more appropriate, use the example below.
 Please note, there is no space between text and the less than symbol "<".
 Example::
 
-  :ref:`Text to show up<user_configuration_file>`
+  :ref:`<Text to show up<user_configuration_file>`
 
 It will look like this on the web. :ref:`Text to show up<user_configuration_file>`
 
