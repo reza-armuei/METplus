@@ -185,20 +185,26 @@ Linking to another Section
 
 The original section being linked to will need an 
 ".. _pick_a_reference_name" so it can be referenced
-in the next section.  Please change the text to something
-appropriate.  No spaces are allowed. Example::
+in the next section.  In this case we will use the 
+:ref:`user_configuration_file` User Configuration File 
+located in the :ref: 'install' Installation Guide.
+Currently an example can be see of the link
+in the Getting Started Chapter section 
+:ref: 'running-metplus'
+Example Wrapper Use Case.  Example::
 
-  .. _reference_orig_name:
+  .. _user_configuration_file:
          must have blank line here
-  Original Name Section
-  ---------------------
+  User Configuration File 
+  =======================
+         must have a blank line here
 
-To add this link somewhere else use "\:ref:\`reference_orig_name`". 
+To add this link somewhere else use "\:ref:\`user_configuration_file`". 
 Please use backticks and note that the first underscore isn't used
 in the reference.
 Example::
 
-  :ref:`reference_orig_name`
+  :ref:`user_configuration_file`
 
 Or to have the (table, figure etc) number used numref will work.
 Example::
