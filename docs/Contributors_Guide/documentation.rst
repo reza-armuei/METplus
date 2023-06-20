@@ -283,7 +283,7 @@ Linking to a variable in the Glossary
 
 In this case, "\:term:" is used. This lets Sphinx know
 to look for the link in the glossary. In this example
-we will use the variable name,   'USER_SCRIPT_COMMAND" 
+we will use the variable name,   "USER_SCRIPT_COMMAND" 
 Example::
 
   :term:`USER_SCRIPT_COMMAND`
@@ -297,20 +297,21 @@ Links to External Web Pages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To link to an external web page, use the following syntax:
-`Link text <link_URL>`_  
-Example::
+\`Link text <link_URL>`_  The below uses the DTD website as an
+example::
 
   `DTC <https://dtcenter.org/>`_
 
 The web link should look like this: `DTC <https://dtcenter.org/>`_
 
-The link can also be separated from the the target definition. 
+The link can also be separated from the target definition. 
 Example::
 
   Get the latest news at `DTC`_.
   .. _DTC: https://dtcenter.org
 
-The web link should look like this:
+The web link should look like this. Please note, the text
+is all on one line:
 Get the latest news at `DTC`_.
 
 Sphinx modules
