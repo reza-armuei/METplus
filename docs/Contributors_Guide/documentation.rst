@@ -206,10 +206,15 @@ Example::
 
   :ref:`user_configuration_file`
 
+It will look like this on the web: :ref:`user_configuration_file`
+
+
 Or to have the (table, figure etc) number used numref will work.
 Example::
 
-  :numref:`reference_orig_name`
+  :numref:`user_configuration_file`
+
+It will look like this on the web:  :numref:`user_configuration_file`
 
 Here is some more information on 
 `Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_
