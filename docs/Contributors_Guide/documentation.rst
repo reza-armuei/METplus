@@ -276,15 +276,19 @@ Then to reference this table::
   
 This will link to the table.
 
-The web link should look like this: LISA UPDATE THIS
+The web link should look like this: LISA UPDATE THIS. Ask Julie P. for a good example
 
 Linking to a variable in the Glossary
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this case, "\:term:" is used. This lets Sphinx know
-to look for the link in the glossary. Example::
+to look for the link in the glossary. In this example
+we will use the variable name,   'USER_SCRIPT_COMMAND" 
+Example::
 
-  :term:`VARIABLE_NAME_HERE`
+  :term:`USER_SCRIPT_COMMAND`
+
+It will look like this on the web: :term:`USER_SCRIPT_COMMAND`
 
 This will link directly to the glossary. Here is some more information on 
 `links to a glossary <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary.html#link-a-term-to-its-a-glossary-entry>`_.
