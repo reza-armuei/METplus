@@ -187,10 +187,10 @@ The original section being linked to will need an
 ".. _pick_a_reference_name" so it can be referenced
 in the next section.  In this case we will use the 
 :ref:`user_configuration_file` User Configuration File 
-located in the :ref: 'install' Installation Guide.
+located in the :ref:`install'` Installation Guide.
 Currently an example can be see of the link
 in the Getting Started Chapter section 
-:ref: 'running-metplus'
+:ref:`running-metplus`
 Example Wrapper Use Case.  Example::
 
   .. _user_configuration_file:
@@ -214,7 +214,8 @@ Example::
 
   :numref:`user_configuration_file`
 
-It will look like this on the web:  :numref:`user_configuration_file`
+It will look like this on the web.  This version shows the 
+numbered section, not the name:  :numref:`user_configuration_file`
 
 Here is some more information on 
 `Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_
@@ -223,7 +224,10 @@ If the link is in another chapter or document, use the example below.
 Please note, there is no space between text and the less than symbol "<".
 Example::
 
-  :ref:`Text to show up<reference_orig_name>`  LISA fix this, nothing shows up because there is nothing to link to.
+  :ref:`Text to show up<user_configuration_file>`
+
+It will look like this on the web. :ref:`Text to show up<user_configuration_file>`
+
 
 Linking to METplus Use Cases (Python code)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
