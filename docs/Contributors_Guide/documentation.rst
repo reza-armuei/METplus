@@ -187,8 +187,8 @@ The original section being linked to will need an
 ".. _pick_a_reference_name" so it can be referenced
 in the next section.  In this case we will use the 
 :ref:`user_configuration_file`
-located in the :ref:`install`.
-Currently an example can be see of the link
+located in the :ref:`install` section.
+Currently an example can be seen of the link
 in the Getting Started Chapter section 
 :ref:`running-metplus`
 Example Wrapper Use Case.  Example::
@@ -209,7 +209,7 @@ Example::
 It will look like this on the web: :ref:`user_configuration_file`
 
 
-Or to have the (table, figure etc) number used numref will work.
+Or to have the (table, figure etc) number used numref will also work.
 Example::
 
   :numref:`user_configuration_file`
@@ -227,7 +227,7 @@ Example::
 
   :ref:`<Text to show up<user_configuration_file>`
 
-It will look like this on the web. :ref:`Text to show up<user_configuration_file>`
+It will look like this on the web. :ref:`Text to show up<user_configuration_file>`.
 
 
 Linking to METplus Use Cases (Python code)
@@ -255,7 +255,9 @@ To make sure the web address is correct:
 
 Examples of the links can be seen in this 
 `table <https://metplus.readthedocs.io/en/latest/Users_Guide/overview.html#metplus-components-python-requirements>`_ 
-in the far right column.
+in the far right column.  Please note, it may be necessary
+to scroll down to the bottom of the table and use the
+horizontal scroll bar to see the far right column.
 
 
 Linking to a table
