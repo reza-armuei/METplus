@@ -221,7 +221,7 @@ Here is some more information on
 
 If the link is in another chapter or document, use the example below.
 Please note, there is no space between text and the less than symbol "<".
-Example:
+Example::
 
   :ref:`Text to show up<reference_orig_name>`  LISA fix this, nothing shows up because there is nothing to link to.
 
