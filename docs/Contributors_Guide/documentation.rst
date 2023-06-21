@@ -333,7 +333,7 @@ Example::
 
 It will look like this on the web:
 
-.. image:: ../figure/doc_image_example.png
+.. image:: figure/doc_image_example.png
 
 Here is some extra information on 
 `images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`_
