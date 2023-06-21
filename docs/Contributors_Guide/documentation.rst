@@ -318,7 +318,7 @@ Adding Images
 -------------
 
 To add an image, use the following syntax:
-".. image:: ../figure/name.png".  Please note,
+".. image:: figure/name.png".  Please note,
 all of the images are stored in the  
 their own directory. In this case it would be,
 *METplus/docs/Contributors_Guide/figure/*.
@@ -335,8 +335,8 @@ It will look like this on the web:
 
 .. image:: figure/doc_image_example.png
 
-Here is some extra information on 
-`images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`_
+Here is some more information on 
+`images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`_.
 
 
 
