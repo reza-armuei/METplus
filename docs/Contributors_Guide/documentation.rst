@@ -186,9 +186,9 @@ Linking to another Section
 The original section being linked to will need an 
 ".. _pick_a_reference_name" so it can be referenced
 in the next section.  In this case we will use the 
-:ref:`user_configuration_file` User Configuration File 
-located in the :ref:`install'` Installation Guide.
-Currently an example can be see of the link
+:ref:`user_configuration_file`
+located in the :ref:`install` section.
+Currently an example can be seen of the link
 in the Getting Started Chapter section 
 :ref:`running-metplus`
 Example Wrapper Use Case.  Example::
@@ -199,8 +199,8 @@ Example Wrapper Use Case.  Example::
   =======================
          must have a blank line here
 
-To add this link somewhere else use "\:ref:\`user_configuration_file`". 
-Please use backticks and note that the first underscore isn't used
+To add this link somewhere else 
+please use backticks and note that the first underscore isn't used
 in the reference.
 Example::
 
@@ -209,7 +209,7 @@ Example::
 It will look like this on the web: :ref:`user_configuration_file`
 
 
-Or to have the (table, figure etc) number used numref will work.
+Or to have the (table, figure etc) number used numref will also work.
 Example::
 
   :numref:`user_configuration_file`
@@ -218,15 +218,16 @@ It will look like this on the web.  This version shows the
 numbered section, not the name:  :numref:`user_configuration_file`
 
 Here is some more information on 
-`Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_
+`Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_.
 
-If the link is in another chapter or document, use the example below.
+If the link is in another chapter or document, and the a different name
+or title would be more appropriate, use the example below.
 Please note, there is no space between text and the less than symbol "<".
 Example::
 
-  :ref:`Text to show up<user_configuration_file>`
+  :ref:`<Text to show up<user_configuration_file>`
 
-It will look like this on the web. :ref:`Text to show up<user_configuration_file>`
+It will look like this on the web. :ref:`Text to show up<user_configuration_file>`.
 
 
 Linking to METplus Use Cases (Python code)
@@ -254,7 +255,9 @@ To make sure the web address is correct:
 
 Examples of the links can be seen in this 
 `table <https://metplus.readthedocs.io/en/latest/Users_Guide/overview.html#metplus-components-python-requirements>`_ 
-in the far right column.
+in the far right column.  Please note, it may be necessary
+to scroll down to the bottom of the table and use the
+horizontal scroll bar to see the far right column.
 
 
 Linking to a table
@@ -273,15 +276,19 @@ Then to reference this table::
   
 This will link to the table.
 
-The web link should look like this: LISA UPDATE THIS
+The web link should look like this: LISA UPDATE THIS. Ask Julie P. for a good example
 
 Linking to a variable in the Glossary
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this case, "\:term:" is used. This lets Sphinx know
-to look for the link in the glossary. Example::
+to look for the link in the glossary. In this example
+we will use the variable name,   "USER_SCRIPT_COMMAND" 
+Example::
 
-  :term:`VARIABLE_NAME_HERE`
+  :term:`USER_SCRIPT_COMMAND`
+
+It will look like this on the web: :term:`USER_SCRIPT_COMMAND`
 
 This will link directly to the glossary. Here is some more information on 
 `links to a glossary <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary.html#link-a-term-to-its-a-glossary-entry>`_.
@@ -290,20 +297,21 @@ Links to External Web Pages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To link to an external web page, use the following syntax:
-`Link text <link_URL>`_  
-Example::
+\`Link text <link_URL>`_  The below uses the DTD website as an
+example::
 
   `DTC <https://dtcenter.org/>`_
 
 The web link should look like this: `DTC <https://dtcenter.org/>`_
 
-The link can also be separated from the the target definition. 
+The link can also be separated from the target definition. 
 Example::
 
   Get the latest news at `DTC`_.
   .. _DTC: https://dtcenter.org
 
-The web link should look like this:
+The web link should look like this. Please note, the text
+is all on one line:
 Get the latest news at `DTC`_.
 
 Sphinx modules
