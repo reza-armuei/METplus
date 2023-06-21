@@ -329,7 +329,7 @@ We will use the image **doc_image_example.png**,
 located in the figure directory.
 Example::
 
-  .. image:: ../figure/doc_image_example.png
+  .. image:: figure/doc_image_example.png
 
 It will look like this on the web:
 
