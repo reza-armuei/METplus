@@ -314,6 +314,35 @@ The web link should look like this. Please note, the text
 is all on one line:
 Get the latest news at `DTC`_.
 
+Adding Images
+-------------
+
+To add an image, use the following syntax:
+".. image:: ../figure/name.png".  Please note,
+all of the images are stored in the  
+their own directory. In this case it would be,
+*METplus/docs/Contributors_Guide/figure/*.
+In the Contributor's Guide, the beginning of the
+file name refers to the section the image
+will be in.
+We will use the image **doc_image_example.png**, 
+located in the figure directory.
+Example::
+
+  .. image:: ../figure/doc_image_example.png
+
+It will look like this on the web:
+
+.. image:: ../figure/doc_image_example.png
+
+Here is some extra information on 
+`images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`_
+
+
+
+Here is some extra information on images vs figures: https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html 
+
+
 Sphinx modules
 --------------
 
