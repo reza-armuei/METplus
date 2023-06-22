@@ -397,7 +397,7 @@ To add a table see this
 Here is an example::
 
   .. list-table:: Title # Adding a title is optional.
-     :widths: 25 25 50  # Adding the widths is optional.
+     :widths: 25 25     # Adding the widths is optional.
      :header-rows: 1    # Adding a header row is also optional.
 
      * - Heading row 1, column 1
@@ -413,7 +413,7 @@ cell must be accounted for.
 The table will look like this on the web:
 
 .. list-table:: Title
-   :widths: 25 25 50 
+   :widths: 25 25
    :header-rows: 1 
 
    * - Heading row 1, column 1
