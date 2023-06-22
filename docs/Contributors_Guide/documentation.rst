@@ -340,7 +340,43 @@ Here is some more information on
 
 
 
-Here is some extra information on images vs figures: https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html 
+Here is some extra information on 
+`images and figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_.
+
+Adding Figures
+--------------
+
+To add a figure, use the following syntax:
+".. figure:: figure/name.png". 
+Please note,
+the figures are stored in a separate
+directory. In this case it would be,
+*METplus/docs/Contributors_Guide/figure/*.
+This is also where the images are stored.
+In the Contributor's Guide, the beginning of the
+file name refers to the section the figure
+will be in.
+We will use the image **1Issue-before-created.png**, 
+located in the figure directory. This is an exampe
+from the 
+`GitHub Workflow Chapter <https://metplus.readthedocs.io/en/latest/Contributors_Guide/github_workflow.html#github-workflow>`_.
+Example::
+
+(Return and Tab over) Comments for figure
+
+Here is some extra information on 
+`figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_. 
+
+To get the figures to automatically number, this needs to be added to the config.py file:
+
+# -- Intersphinx control -----------------------------------------------------
+intersphinx_mapping = {'numpy':("https://docs.scipy.org/doc/numpy/", None)}
+
+numfig = True
+
+numfig_format = {
+    'figure': 'Figure %s',
+}
 
 
 Sphinx modules
