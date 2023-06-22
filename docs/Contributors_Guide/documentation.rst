@@ -367,7 +367,6 @@ Example::
 Here is how it will look on the web:
 
 .. figure:: figure/1Issue-before-created.png
-   :width: 400
 
 	Comments for figure
 
