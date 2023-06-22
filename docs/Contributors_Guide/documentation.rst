@@ -397,8 +397,8 @@ To add a table see this
 Here is an example::
 
   .. list-table:: Title # Adding a title is optional.
-     :widths: 25 25 50  # Adding the widths is optional
-     :header-rows: 1    # Adding a header row is also optional
+     :widths: 25 25 50  # Adding the widths is optional.
+     :header-rows: 1    # Adding a header row is also optional.
 
      * - Heading row 1, column 1
        - Heading row 1, column 2
@@ -410,10 +410,26 @@ Here is an example::
 Please note that Row 1, column 2 is blank.  A blank
 cell must be accounted for.
 
+The table will look like this on the web:
+
+  .. list-table:: Title # Adding a title is optional.
+     :widths: 25 25 50  # Adding the widths is optional.
+     :header-rows: 1    # Adding a header row is also optional.
+
+     * - Heading row 1, column 1
+       - Heading row 1, column 2
+     * - Row 1, column 1
+       -
+     * - Row 2, column 1
+       - Row 2, column 2
+
+
 Converting tables into new Sphinx format list
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Copy the table from lyx into google sheets.  
-Then use the below formula to turn the table into a list.  
+If a table has already been created outside of Sphinx,
+dopy the table into google sheets.  
+Click on a cell outside of the tables rows and
+columns. Put the below formula to turn the table into a list.  
 This is for a 3 column table.  
 (for 4 columns change the ‘C’ to a ‘D’.)::
 
@@ -424,6 +440,9 @@ need to be lined up under the colon::
 
   First row:              ="  * - "&A1
   Following columns:      ="    - "&A2
+
+This will create the correct formatting for a Sphinx table.
+Once this is completed, copy the list into the rst documentation.  
 
 
 Sphinx modules
