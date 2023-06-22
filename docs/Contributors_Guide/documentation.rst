@@ -334,6 +334,7 @@ Example::
 It will look like this on the web:
 
 .. image:: figure/doc_image_example.png
+   :width: 400
 
 Here is some more information on 
 `images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`_.
@@ -353,9 +354,6 @@ the figures are stored in a separate
 directory. In this case it would be,
 *METplus/docs/Contributors_Guide/figure/*.
 This is also where the images are stored.
-In the Contributor's Guide, the beginning of the
-file name refers to the section the figure
-will be in.
 We will use the image **1Issue-before-created.png**, 
 located in the figure directory. This is an exampe
 from the 
@@ -369,6 +367,7 @@ Example::
 Here is how it will look on the web:
 
 .. figure:: figure/1Issue-before-created.png
+   :width: 400
 
 	Comments for figure
 
@@ -376,7 +375,7 @@ Here is some extra information on
 `figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_. 
 
 To get the figures to automatically number, this needs 
-to be added to the config.py file::
+to be added to the **config.py** file::
 
   # -- Intersphinx control -----------------------------------------------------
   intersphinx_mapping = {'numpy':("https://docs.scipy.org/doc/numpy/", None)}
@@ -387,6 +386,9 @@ to be added to the config.py file::
       'figure': 'Figure %s',
   }
 
+Please note, the automatic numbering of figures 
+is NOT set up in the Contributor's Guide, but it is set up in
+the User's Guide **config.py** file.
 
 Sphinx modules
 --------------
