@@ -362,21 +362,30 @@ from the
 `GitHub Workflow Chapter <https://metplus.readthedocs.io/en/latest/Contributors_Guide/github_workflow.html#github-workflow>`_.
 Example::
 
-(Return and Tab over) Comments for figure
+  .. figure:: figure/1Issue-before-created.png
+
+   	Return and Tab over. Comments for figure
+
+Here is how it will look on the web:
+
+.. figure:: figure/1Issue-before-created.png
+
+	Comments for figure
 
 Here is some extra information on 
 `figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_. 
 
-To get the figures to automatically number, this needs to be added to the config.py file:
+To get the figures to automatically number, this needs 
+to be added to the config.py file::
 
-# -- Intersphinx control -----------------------------------------------------
-intersphinx_mapping = {'numpy':("https://docs.scipy.org/doc/numpy/", None)}
-
-numfig = True
-
-numfig_format = {
-    'figure': 'Figure %s',
-}
+  # -- Intersphinx control -----------------------------------------------------
+  intersphinx_mapping = {'numpy':("https://docs.scipy.org/doc/numpy/", None)}
+  
+  numfig = True
+  
+  numfig_format = {
+      'figure': 'Figure %s',
+  }
 
 
 Sphinx modules
