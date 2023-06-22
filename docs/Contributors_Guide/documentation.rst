@@ -389,6 +389,43 @@ Please note, the automatic numbering of figures
 is NOT set up in the Contributor's Guide, but it is set up in
 the User's Guide **config.py** file.
 
+Adding Tables
+-------------
+
+To add a table see this 
+`page <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/tables.html>`_.
+Here is an example::
+
+  .. list-table:: Title # Adding a title is optional.
+     :widths: 25 25 50  # Adding the widths is optional
+     :header-rows: 1    # Adding a header row is also optional
+
+     * - Heading row 1, column 1
+       - Heading row 1, column 2
+     * - Row 1, column 1
+       -
+     * - Row 2, column 1
+       - Row 2, column 2
+
+Please note that Row 1, column 2 is blank.  A blank
+cell must be accounted for.
+
+Converting tables into new Sphinx format list
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Copy the table from lyx into google sheets.  
+Then use the below formula to turn the table into a list.  
+This is for a 3 column table.  
+(for 4 columns change the ‘C’ to a ‘D’.)::
+
+  =ArrayFormula(transpose(split(concatenate(A1:C&char(9)),char(9))))
+
+In the next column over add this formula.  Remember the asterisks
+need to be lined up under the colon::
+
+  First row:              ="  * - "&A1
+  Following columns:      ="    - "&A2
+
+
 Sphinx modules
 --------------
 
