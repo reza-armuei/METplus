@@ -358,17 +358,17 @@ We will use the image **1Issue-before-created.png**,
 located in the figure directory. This is an exampe
 from the 
 `GitHub Workflow Chapter <https://metplus.readthedocs.io/en/latest/Contributors_Guide/github_workflow.html#github-workflow>`_.
-Example::
+Below is an example::
 
   .. figure:: figure/1Issue-before-created.png
 
-   	Return and Tab over. Comments for figure
+   	(Return and Tab over). Comments for the figure
 
 Here is how it will look on the web:
 
 .. figure:: figure/1Issue-before-created.png
 
-	Comments for figure
+	Comments for the figure
 
 Here is some extra information on 
 `figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_. 
