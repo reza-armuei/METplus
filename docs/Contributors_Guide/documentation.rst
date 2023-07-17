@@ -380,7 +380,7 @@ Figures
 
 To add a figure, use the following syntax:
 
-  .. figure:: figure/name.png
+  .. figure:: figure/1Issue-before-created.png
 
 Please note,
 the figures are stored in a separate
