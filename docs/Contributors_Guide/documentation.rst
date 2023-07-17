@@ -2,7 +2,7 @@
 Documentation
 *************
 
-Viewing METplus documentation
+Viewing METplus Documentation
 =============================
 
 The METplus documentation (beginning with version 3.0) is available
@@ -32,7 +32,8 @@ Defining Chapters and Sections
 
 Chapter and section headers are created by underlining 
 the section title with one of the below punctuation characters.
-This must be EXACTLY as long as the text line or there will be a Github error message:
+This must be EXACTLY as long as the text line or there will be a Github error message.
+`Sphinx documentation on chapters and sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`_
 
 Here is an example of a chapter title::
 
@@ -46,12 +47,16 @@ Include one line of whitespace below the last line of asterisks or it won't work
 Below is the convention that is used in the Python Developer’s Guide
 and METplus::
   
+  # with overline, for parts (e.g. the RTD documentation for the component 
+    (i.e. docs/index.rst), each guide (e.g. User's Guide, Contributor's Guide) 
+    (i.e. docs/Users_Guide/index.rst, docs/Contributors_Guide/index.rst))
+  * with overline, for chapters
   * with overline, for chapters
   = for sections
   - for subsections (this is a dash, not an underline.)
   ^ for subsubsections
   " for paragraphs (as of yet, this isn't used in the METplus documentation.)
-  # with overline, for parts. This can be used for hidden comments in the code.
+
 
 If an underline is used with no text above or below it, 
 this will create a thin dividing line in the document.
@@ -64,8 +69,10 @@ It will look like this on the web:
 _________________
 
 
-Items to Bold
--------------
+Bold
+----
+
+How to bold:
 
   * To make text bold use 2 asterisks before and after the bold section.
     Example::  
@@ -73,11 +80,19 @@ Items to Bold
       **Bolded text** 
       
   * It will look like this on the web:  **Bolded text**
+
+Here is more information about 
+`Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup`_
+
+What to bold:
+
   * Variables (e.g. **MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME**, etc.)
   * Filenames (**line_defaults.yaml, contour_defaults.yaml, defaults.conf**, etc.)
 
-Items in Italics
-----------------
+Italics
+-------
+
+How to italicize:
 
   * To italicize text use 1 asterisk before and after the italics section.
     Example::
@@ -85,13 +100,20 @@ Items in Italics
       *Italicized text* 
       
   * It will look like this on the web: *Italicized text*
+
+Here is more information about 
+`Sphinx documentation for italicizing and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup`_
+
+
+What to italicize:
+
   * Paths and Directories are italicized.
   * If it is a full path and a file name, use italics. 
     This was used a lot in METplotpy, 
     Example: *$METPLOTPY_SOURCE/METplotpy/test/ens_ss/ens_ss.data* 
   * Italics for values to options.
   
-Math equations
+Math Equations
 --------------
   * use :math:\mathbf
   * Then put what is needed in bolded brackets.
@@ -100,7 +122,9 @@ Math equations
       :math:\mathbf **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
       
   * It will look like this on the web: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
-  * `Referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
+
+Here is more information about 
+`Sphinx documentation for referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
 
 Symbols
 -------
@@ -112,12 +136,12 @@ Symbols
       
   * It will look like this on the web: :math:`\Delta`
 
-Command Line Command
---------------------
+Command Line
+------------
 
-For including commands for a command line, use the “literal block” syntax.
+To document command line syntax, use the “literal block” syntax.
 Indent the line two spaces with two colons at the end of the sentence"::", 
-one line of white space below that,
+with one line of white space below that,
 two indented spaces, "Write my command here" then one more line of
 white space. Example::
 
@@ -137,7 +161,8 @@ Then continue writing on this line. Note there needs to be one line of
 whitespace above and below the command.
 
 Here is some more information on 
-`literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>`_
+`Sphinx literal blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-literal-blocks>`_.
+And here is some extra detail about `literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>`_.
 
 Creating Carriage Returns and New Lines
 ---------------------------------------
@@ -175,7 +200,9 @@ It will look like this on the web:
   | On separate lines
   | Like this
 
-Here is some more information on `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>`_.
+Here is some more information about 
+`Sphinx line blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks>`_. 
+Here is some more general information on `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>`_.
 
 Links
 -----
@@ -194,28 +221,31 @@ in the Getting Started Chapter section
 Example Wrapper Use Case.  Example::
 
   .. _user_configuration_file:
-         must have blank line here
+         
   User Configuration File 
   =======================
-         must have a blank line here
+         
 
 To add this link somewhere else 
 please use backticks and note that the first underscore isn't used
 in the reference.
 Example::
 
-  :ref:`user_configuration_file`
+ Please see the :ref:`user_configuration_file`.
 
-It will look like this on the web: :ref:`user_configuration_file`
+It will look like this on the web: 
+Please see the :ref:`user_configuration_file`.
 
 
 Or to have the (table, figure etc) number used numref will also work.
 Example::
 
-  :numref:`user_configuration_file`
+ Please referr to section :numref:`user_configuration_file`.
 
 It will look like this on the web.  This version shows the 
-numbered section, not the name:  :numref:`user_configuration_file`
+numbered section, not the name:  
+
+Please referr to section :numref:`user_configuration_file`.
 
 Here is some more information on 
 `Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_.
@@ -225,7 +255,7 @@ or title would be more appropriate, use the example below.
 Please note, there is no space between text and the less than symbol "<".
 Example::
 
-  :ref:`<Text to show up<user_configuration_file>`
+  :ref:`<Text to show up<user_configuration_file>`.
 
 It will look like this on the web. :ref:`Text to show up<user_configuration_file>`.
 
@@ -241,7 +271,7 @@ https://metplus.readthedocs.io/en/latest/generated/met_tool_wrapper/StatAnalysis
 The full web address is being shown above so it can be edited below.
 To make sure the web address is correct:
 
-  * This example will be called "TCStat: Basic Use Case"
+  * This example will be called "TCStat: Basic Use Case".
   * Remove this front portion from the web address before 
     “generated”: https://metplus.readthedocs.io/en/latest
   * Put a “../” in front of “generated”
@@ -249,9 +279,9 @@ To make sure the web address is correct:
     #sphx-glr-generated-met-tool-wrapper-statanalysis-statanalysis-py
   * The web link should look like this example::
 
-    `TCStat: Basic Use Case <../generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html>`_
+    `TCStat: Basic Use Case <../generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html>`_.
   * It will look like this on the web page:
-    `TCStat: Basic Use Case <../generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html>`_
+    `TCStat: Basic Use Case <../generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html>`_.
 
 Examples of the links can be seen in this 
 `table <https://metplus.readthedocs.io/en/latest/Users_Guide/overview.html#metplus-components-python-requirements>`_ 
@@ -260,14 +290,14 @@ to scroll down to the bottom of the table and use the
 horizontal scroll bar to see the far right column.
 
 
-Linking to a table
+Linking to a Table
 ^^^^^^^^^^^^^^^^^^
 
 This is similar to linking to another section.
 Example::
 
   .. _table_name_1:
-         (must have blank line here)
+         
   .. list-table:: table name one
 
 Then to reference this table::
@@ -278,7 +308,7 @@ This will link to the table.
 
 The web link should look like this: LISA UPDATE THIS. Ask Julie P. for a good example
 
-Linking to a variable in the Glossary
+Linking to a Variable in the Glossary
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this case, "\:term:" is used. This lets Sphinx know
@@ -300,9 +330,9 @@ To link to an external web page, use the following syntax:
 \`Link text <link_URL>`_  The below uses the DTD website as an
 example::
 
-  `DTC <https://dtcenter.org/>`_
+  `DTC <https://dtcenter.org/>`_.
 
-The web link should look like this: `DTC <https://dtcenter.org/>`_
+The web link should look like this: `DTC <https://dtcenter.org/>`_.
 
 The link can also be separated from the target definition. 
 Example::
@@ -314,11 +344,14 @@ The web link should look like this. Please note, the text
 is all on one line:
 Get the latest news at `DTC`_.
 
-Adding Images
--------------
+Images
+------
 
 To add an image, use the following syntax:
-".. image:: figure/name.png".  Please note,
+
+  .. image:: figure/name.png  
+
+Please note,
 all of the images are stored in the  
 their own directory. In this case it would be,
 *METplus/docs/Contributors_Guide/figure/*.
@@ -326,7 +359,7 @@ In the Contributor's Guide, the beginning of the
 file name refers to the section the image
 will be in.
 We will use the image **doc_image_example.png**, 
-located in the figure directory.
+located in the *figure* directory.
 Example::
 
   .. image:: figure/doc_image_example.png
@@ -339,16 +372,16 @@ It will look like this on the web:
 Here is some more information on 
 `images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`_.
 
-
-
 Here is some extra information on 
 `images and figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_.
 
-Adding Figures
---------------
+Figures
+-------
 
 To add a figure, use the following syntax:
-".. figure:: figure/name.png". 
+
+  .. figure:: figure/name.png
+
 Please note,
 the figures are stored in a separate
 directory. In this case it would be,
@@ -362,13 +395,13 @@ Below is an example::
 
   .. figure:: figure/1Issue-before-created.png
 
-   	(Return and Tab over). Comments for the figure
+   	(Return and tab over). Comments for the figure.
 
 Here is how it will look on the web:
 
 .. figure:: figure/1Issue-before-created.png
 
-	Comments for the figure
+	Comments for the figure.
 
 Here is some extra information on 
 `figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_. 
@@ -389,11 +422,9 @@ Please note, the automatic numbering of figures
 is NOT set up in the Contributor's Guide, but it is set up in
 the User's Guide **config.py** file.
 
-Adding Tables
--------------
+Tables
+------
 
-To add a table see this 
-`page <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/tables.html>`_.
 Here is an example::
 
   .. list-table:: Title # Adding a title is optional.
@@ -423,11 +454,16 @@ The table will look like this on the web:
    * - Row 2, column 1
      - Row 2, column 2
 
+To add a table see this 
+`page <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/tables.html>`_.
+Please note we DO NOT follow the Sphinx method of counting and creating 
+`tables here <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#tables>`_.
 
-Converting tables into new Sphinx format list
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Converting tables into the new Sphinx format list
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If a table has already been created outside of Sphinx,
-dopy the table into google sheets.  
+copy the table into google sheets.  
 Click on a cell outside of the tables rows and
 columns. Put the below formula to turn the table into a list.  
 This is for a 3 column table.  
@@ -443,6 +479,8 @@ need to be lined up under the colon::
 
 This will create the correct formatting for a Sphinx table.
 Once this is completed, copy the list into the rst documentation.  
+
+LISA: should I create an example to link to?
 
 
 Sphinx modules
