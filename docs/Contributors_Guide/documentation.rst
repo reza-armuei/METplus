@@ -82,7 +82,7 @@ How to bold:
   * It will look like this on the web:  **Bolded text**
 
 Here is more information about 
-`Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup`_
+`Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_
 
 What to bold:
 
@@ -102,7 +102,7 @@ How to italicize:
   * It will look like this on the web: *Italicized text*
 
 Here is more information about 
-`Sphinx documentation for italicizing and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup`_
+`Sphinx documentation for italicizing and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_
 
 
 What to italicize:
@@ -349,7 +349,7 @@ Images
 
 To add an image, use the following syntax:
 
-  .. image:: figure/name.png  
+  .. image:: figure/doc_image_example.png  
 
 Please note,
 all of the images are stored in the  
