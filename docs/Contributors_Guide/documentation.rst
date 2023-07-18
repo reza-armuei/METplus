@@ -228,18 +228,19 @@ please use backticks and note that the first underscore isn't used
 in the reference.
 Example::
 
- Please see the :ref:`user_configuration_file`.
+  Please see the :ref:`user_configuration_file`.
 
 It will look like this on the web: 
 Please see the :ref:`user_configuration_file`.
 
 Linking Using Reference Numbers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To have the (table, figure etc) number used instead of the title
- use 'numref'.
+To have a number used for sections, tables, figures etc. 
+instead of the title use 'numref'.
 Example::
 
- Please referr to section :numref:`user_configuration_file`.
+  Please referr to section :numref:`user_configuration_file`.
 
 It will look like this on the web.  This version shows the 
 numbered section, not the name:  
