@@ -68,6 +68,61 @@ It will look like this on the web:
 
 _________________
 
+Numbering sections or bullets
+-----------------------------
+
+Here are some examples::
+
+  1.
+  Start text section below.  Doing it this way will indent the entire text block.
+
+  1. Not writing the text below will not indent the text block.
+
+It will look like this on the web:
+
+1.
+Start text section below.  Doing it this way will indent the entire text block.
+
+1. Not writing the text below will not indent the text block.
+
+
+If a subsection is needed, include a blank line and indents::
+
+  * this is
+  * a list
+
+    * with a nested list
+    * and some subitems
+
+  * and here the parent list continues
+
+It will look like this on the web:
+
+* this is
+* a list
+
+  * with a nested list
+  * and some subitems
+
+* and here the parent list continues
+
+Please note, if there are extra spaces before or after the asterisk, 
+it will change how the list looks.  Be careful.
+
+Also note, if just an asterisk is needed within a bolded section, 
+use a backslash \. Or the bolding won’t work.
+Example::
+
+  rst:
+  **Name_everything\*.txt**
+  
+How it will look on the web:
+ 
+**Name_everything\*.txt**
+
+Here is some more information on 
+`Sphinx bulleted and numbered sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
+
 
 Bold
 ----
@@ -112,6 +167,13 @@ What to italicize:
     This was used a lot in METplotpy, 
     Example: *$METPLOTPY_SOURCE/METplotpy/test/ens_ss/ens_ss.data* 
   * Italics for values to options.
+
+Underlining
+-----------
+
+Please DO NOT underline in Sphinx.  It is possible to make Sphinx
+underline things but it goes against the natural order of things.
+
 
 Footnotes
 ---------
@@ -508,15 +570,18 @@ Creating Warning Messages
 -------------------------
 
 This was used in the METplus Glossary.
-Example for rst file::
+Example::
 
   ADECK_FILE_PREFIX
        .. warning:: **DEPRECATED:** Please use TC_PAIRS_ADECK_TEMPLATE.
 
-What it will look like in html:
+What it will look like this on the web:
 
 ADECK_FILE_PREFIX
      .. warning:: **DEPRECATED:** Please use TC_PAIRS_ADECK_TEMPLATE.
+
+Here is some more information on 
+`Sphinx directives <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives>`_
 
 Troubleshooting
 ---------------
@@ -534,6 +599,30 @@ Chrome browsers won’t open the site but Firefox will open it.
 Jeff Stolte re-created this website using 
 `github issue <https://github.com/faust93/livesphinx>`_.
 
+Double Dashes
+^^^^^^^^^^^^^
+
+This is helpful for python commands.  
+Use two back slashes between the dashes 
+Example::
+
+  -\\-command
+
+Backslash
+^^^^^^^^^
+
+Using a backslash "\" is handy when using
+asterics "\*", double dashes "-\\-", and
+other characters that aren't formatting correctly.
+Example::
+
+  \*
+
+This will format as just an asterisk without turning
+into an unwanted bullet point.
+
+Here is some more information on 
+`Sphinx and backslashes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
 
 Underscores
 ^^^^^^^^^^^
