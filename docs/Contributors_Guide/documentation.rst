@@ -376,7 +376,7 @@ Here is some extra information on
 Figures
 -------
 
-To add a figure, use the following syntax:
+To add a figure, use the following syntax::
 
   .. figure:: figure/1Issue-before-created.png
 
@@ -479,6 +479,17 @@ This will create the correct formatting for a Sphinx table.
 Once this is completed, copy the list into the rst documentation.  
 
 LISA: should I create an example to link to?
+
+Troubleshooting
+---------------
+
+Underscores
+^^^^^^^^^^^
+
+Some of the names include an underscore, for instance, “FNNN\_ “.  
+This will show up as a link in the documentation, FNNN_.  
+To keep this from happening put a backwards slash in 
+front of the underscore.  “FNN\\_”
 
 
 Sphinx modules
