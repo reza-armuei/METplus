@@ -487,7 +487,7 @@ Underscores
 ^^^^^^^^^^^
 
 Some of the names include an underscore, for instance, “FNNN\_ “.  
-This will show up as a link in the documentation, FNNN_.  
+This will show up as a broken link in the documentation.  
 To keep this from happening put a backwards slash in 
 front of the underscore.  “FNN\\_”
 
