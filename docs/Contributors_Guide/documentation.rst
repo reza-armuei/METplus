@@ -135,7 +135,7 @@ Example::
   .. Text you’d like commented out.
 
 Here is more information about 
-`Sphinx comments <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#comments>`_
+`Sphinx comments <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#comments>`_.
   
 Math Equations
 --------------
@@ -504,6 +504,20 @@ Once this is completed, copy the list into the rst documentation.
 
 LISA: should I create an example to link to?
 
+Creating Warning Messages
+-------------------------
+
+This was used in the METplus :ref:`glossary`.
+Example for rst file::
+
+  ADECK_FILE_PREFIX
+       .. warning:: **DEPRECATED:** Please use TC_PAIRS_ADECK_TEMPLATE.
+
+What it will look like in html:
+
+ADECK_FILE_PREFIX
+     .. warning:: **DEPRECATED:** Please use TC_PAIRS_ADECK_TEMPLATE.
+
 Troubleshooting
 ---------------
 
@@ -512,19 +526,19 @@ Testing Sphinx Nomenclature on a Web Page
 
 It can be time consuming to wait for ReadTheDocs to build.
 To quickly test how something will look in Sphinx, use this
-web page that has been created on 'seneca'. 
+web page that has been created on the machine, 'seneca'. 
 http://seneca.rap.ucar.edu:5000/
 Please note this is not a secure website. (It is an http, not https site.)  
 The user must be logged into the VPN for this to work.  
-Chrome browsers won’t open the site but firefox will. 
+Chrome browsers won’t open the site but Firefox will open it. 
 Jeff Stolte re-created this website using 
-`github issue <https://github.com/faust93/livesphinx>`_
+`github issue <https://github.com/faust93/livesphinx>`_.
 
 
 Underscores
 ^^^^^^^^^^^
 
-Some of the names include an underscore, for instance, “FNNN\_ “.  
+Some of the names include an underscore, for instance, "FNNN\_".  
 This will show up as a broken link in the documentation.  
 To keep this from happening put a backwards slash in 
 front of the underscore.  “FNN\\_”
