@@ -507,7 +507,7 @@ LISA: should I create an example to link to?
 Creating Warning Messages
 -------------------------
 
-This was used in the METplus :ref:`glossary`.
+This was used in the METplus Glossary.
 Example for rst file::
 
   ADECK_FILE_PREFIX
