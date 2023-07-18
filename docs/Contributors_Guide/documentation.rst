@@ -112,6 +112,30 @@ What to italicize:
     This was used a lot in METplotpy, 
     Example: *$METPLOTPY_SOURCE/METplotpy/test/ens_ss/ens_ss.data* 
   * Italics for values to options.
+
+Footnotes
+---------
+
+Footnotes aren't used often but here is an example::
+
+  [#]_  Use this where the footnote will go in the paragraph.  # will fill in with a number
+  .. [#] This is the actual footnote.
+
+Here is more information about 
+`Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_
+
+Commenting out text
+-------------------
+
+If notes need to be made within rst, use a
+blank line above and a ".. " to comment out text.
+Example::
+
+  add blank line here
+  .. Text you’d like commented out.
+
+Here is more information about 
+`Sphinx comments <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#comments>`_
   
 Math Equations
 --------------
@@ -482,6 +506,20 @@ LISA: should I create an example to link to?
 
 Troubleshooting
 ---------------
+
+Testing Sphinx Nomenclature on a Web Page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+It can be time consuming to wait for ReadTheDocs to build.
+To quickly test how something will look in Sphinx, use this
+web page that has been created on 'seneca'. 
+http://seneca.rap.ucar.edu:5000/
+Please note this is not a secure website. (It is an http, not https site.)  
+The user must be logged into the VPN for this to work.  
+Chrome browsers won’t open the site but firefox will. 
+Jeff Stolte re-created this website using 
+`github issue <https://github.com/faust93/livesphinx>`_
+
 
 Underscores
 ^^^^^^^^^^^
