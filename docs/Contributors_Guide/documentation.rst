@@ -82,7 +82,7 @@ How to bold:
   * It will look like this on the web:  **Bolded text**
 
 Here is more information about 
-`Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_
+`Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
 
 What to bold:
 
@@ -102,7 +102,7 @@ How to italicize:
   * It will look like this on the web: *Italicized text*
 
 Here is more information about 
-`Sphinx documentation for italicizing and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_
+`Sphinx documentation for italicizing and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
 
 
 What to italicize:
@@ -167,10 +167,8 @@ And here is some extra detail about `literal blocks <https://docutils.sourceforg
 Creating Carriage Returns and New Lines
 ---------------------------------------
 
-RST does not obey carriage returns. To get text to appear on 
-consecutive lines with no whitespace between, use the 
-“line block” syntax, which is to prepend each line with 
-the “|” symbol. Example::
+RST does not obey carriage returns. Here is an
+example of just using carriage returns:
 
   This text will
   Be
@@ -182,9 +180,9 @@ It will look like this on the web:
 This text will Be Rendered All on a single Line like this
 
 To keep the text on separate lines, use the "|" with a
-space at the beginning of each new line.  Example::
-
-  One line of blank space above and below text 
+space at the beginning of each new line.
+Also include One line of blank space above and below text.
+Example::
   
   | This text will
   | Be
@@ -213,9 +211,8 @@ Linking to another Section
 The original section being linked to will need an 
 ".. _pick_a_reference_name" so it can be referenced
 in the next section.  In this case we will use the 
-:ref:`user_configuration_file`
-located in the :ref:`install` section.
-Currently an example can be seen of the link
+:ref:`user_configuration_file`.
+An example of this link can be seen
 in the Getting Started Chapter section 
 :ref:`running-metplus`
 Example Wrapper Use Case.  Example::
@@ -236,8 +233,10 @@ Example::
 It will look like this on the web: 
 Please see the :ref:`user_configuration_file`.
 
+Linking Using Reference Numbers
 
-Or to have the (table, figure etc) number used numref will also work.
+To have the (table, figure etc) number used instead of the title
+ use 'numref'.
 Example::
 
  Please referr to section :numref:`user_configuration_file`.
@@ -318,7 +317,7 @@ Example::
 
   :term:`USER_SCRIPT_COMMAND`
 
-It will look like this on the web: :term:`USER_SCRIPT_COMMAND`
+It will look like this on the web: :term:`USER_SCRIPT_COMMAND`.
 
 This will link directly to the glossary. Here is some more information on 
 `links to a glossary <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary.html#link-a-term-to-its-a-glossary-entry>`_.
@@ -347,18 +346,8 @@ Get the latest news at `DTC`_.
 Images
 ------
 
-To add an image, use the following syntax:
-
-  .. image:: figure/doc_image_example.png  
-
-Please note,
-all of the images are stored in the  
-their own directory. In this case it would be,
-*METplus/docs/Contributors_Guide/figure/*.
-In the Contributor's Guide, the beginning of the
-file name refers to the section the image
-will be in.
-We will use the image **doc_image_example.png**, 
+To add an image we will use the,
+**doc_image_example.png**, image 
 located in the *figure* directory.
 Example::
 
@@ -368,6 +357,14 @@ It will look like this on the web:
 
 .. image:: figure/doc_image_example.png
    :width: 400
+
+Please note,
+all of the images are stored in the  
+their own directory. In this case it would be,
+*METplus/docs/Contributors_Guide/figure/*.
+In the Contributor's Guide, the beginning of the
+file name refers to the section the image
+will be in.
 
 Here is some more information on 
 `images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`_.
