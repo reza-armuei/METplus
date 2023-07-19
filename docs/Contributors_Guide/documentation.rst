@@ -74,51 +74,40 @@ Numbering sections or bullets
 Here are some examples::
 
   1.
-  Start text section below.  Doing it this way will indent the entire text block.
+  Start text section below for no indentation.
 
-  1. Not writing the text below will not indent the text block.
+  1. This text block will be indented.
 
 It will look like this on the web:
 
 1.
-Start text section below.  Doing it this way will indent the entire text block.
+Start text section below for no indentation.
 
-1. Not writing the text below will not indent the text block.
+1. This text block will be indented.
 
 
 If a subsection is needed, include a blank line and indents::
 
-  * this is
-  * a list
+  * Item 1
+  * Item 2
 
-    * with a nested list
-    * and some subitems
+    * First nested item
+    * Second nested item
 
-  * and here the parent list continues
+  * Item 3
 
 It will look like this on the web:
 
-* this is
-* a list
+* Item 1  
+* Item 2
 
-  * with a nested list
-  * and some subitems
+  * First nested item
+ * Second nested item
 
-* and here the parent list continues
+* Item 3
 
 Please note, if there are extra spaces before or after the asterisk, 
 it will change how the list looks.  Be careful.
-
-Also note, if just an asterisk is needed within a bolded section, 
-use a backslash \. Or the bolding won’t work.
-Example::
-
-  rst:
-  **Name_everything\*.txt**
-  
-How it will look on the web:
- 
-**Name_everything\*.txt**
 
 Here is some more information on 
 `Sphinx bulleted and numbered sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
@@ -135,6 +124,17 @@ How to bold:
       **Bolded text** 
       
   * It will look like this on the web:  **Bolded text**
+
+Also note, if just an asterisk is needed within a bolded section, 
+use a backslash \. Or the bolding won’t work.
+Example::
+
+  rst:
+  **Name_everything\*.txt**
+  
+How it will look on the web:
+ 
+**Name_everything\*.txt**
 
 Here is more information about 
 `Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
@@ -183,8 +183,10 @@ Footnotes aren't used often but here is an example::
   [#]_  Use this where the footnote will go in the paragraph.  # will fill in with a number
   .. [#] This is the actual footnote.
 
+LISA link to an example of footnotes.
+
 Here is more information about 
-`Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_
+`Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_.
 
 Commenting out text
 -------------------
@@ -222,8 +224,8 @@ Symbols
       
   * It will look like this on the web: :math:`\Delta`
 
-Command Line
-------------
+Command Line Syntax
+-------------------
 
 To document command line syntax, use the “literal block” syntax.
 Indent the line two spaces with two colons at the end of the sentence"::", 
@@ -243,7 +245,7 @@ of the 2 colons):
   
     Write my command here
 
-Then continue writing on this line. Note there needs to be one line of 
+Note: there needs to be one line of 
 whitespace above and below the command.
 
 Here is some more information on 
@@ -253,14 +255,14 @@ And here is some extra detail about `literal blocks <https://docutils.sourceforg
 Creating Carriage Returns and New Lines
 ---------------------------------------
 
-RST does not obey carriage returns. Here is an
+The language, rst, does not obey carriage returns. Here is an
 example of just using carriage returns:
 
-  This text will
-  Be
-  Rendered
-  All on a single
-  Line like this
+  | This text will
+  | Be
+  | Rendered
+  | All on a single
+  | Line like this
 
 It will look like this on the web: 
 This text will Be Rendered All on a single Line like this
@@ -490,6 +492,9 @@ Here is how it will look on the web:
 Here is some extra information on 
 `figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_. 
 
+Automatically Number Figures
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 To get the figures to automatically number, this needs 
 to be added to the **config.py** file::
 
@@ -569,7 +574,7 @@ LISA: should I create an example to link to?
 Creating Warning Messages
 -------------------------
 
-This was used in the METplus Glossary.
+This was used in the :ref:`METplus_glossary`.
 Example::
 
   ADECK_FILE_PREFIX
@@ -596,7 +601,7 @@ http://seneca.rap.ucar.edu:5000/
 Please note this is not a secure website. (It is an http, not https site.)  
 The user must be logged into the VPN for this to work.  
 Chrome browsers won’t open the site but Firefox will open it. 
-Jeff Stolte re-created this website using 
+Jeff Stolte re-created this website using this
 `github issue <https://github.com/faust93/livesphinx>`_.
 
 Double Dashes
