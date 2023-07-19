@@ -9,21 +9,15 @@ The METplus documentation (beginning with version 3.0) is available
 `online <https://metplus.readthedocs.io/>`_. The majority of the documentation 
 is created using the Sphinx documentation generator tool, which was originally 
 created for Python documentation. The documentation is created using 
-'reStructuredText (RST) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. 
+`reStructuredText (RST) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. 
 This link provides a brief introduction to RST concepts and syntax, intended 
 to give authors enough information to create and modify the documents productively.
 
 Conventions
 ===========
 
-The majority of the documentation is created using the Sphinx documentation
-generator tool, which was originally created for Python documentation.
-The documentation is created using
-`reStructuredText (RST) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_.
-This link provides a brief introduction to reST concepts and syntax, 
-intended to give authors enough information to create and modify the 
-documents productively. We follow the conventions outlines in the 
-link, along with some additional METplus Component specific conventions:
+We follow the conventions outlines in the link, along with some 
+additional METplus Component specific conventions:
 
 Defining Chapters and Sections
 ------------------------------
@@ -110,6 +104,26 @@ it will change how the list looks.  Be careful.
 Here is some more information on 
 `Sphinx bulleted and numbered sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
 
+code blocks
+-----------
+
+Code blocks are a quick and easy way to bring attention to running code.
+Start the code below and indent 2 spaces for the actual code.  
+The space above and below are necessary or it won't work.
+Example::
+
+  .. code-block:: ini
+
+    cd example
+    ./run_something.py
+
+Please note:  We used to use  '.. code-block:: none'.  
+But this was creating problems.  
+It is possible to use the name of the program, such as 
+'python' or ‘bash’ instead of ‘none’.
+
+Here is more information about 
+`Sphinx code blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`_.
 
 Bold
 ----
