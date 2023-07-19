@@ -672,6 +672,8 @@ Example::
 
   \’\single quotes\’\ 
 
+It will look like this on the web: \’\single quotes\’\  vs 'single quotes'
+
 For more information, 
 `this page was helpful <https://stackoverflow.com/questions/17965655/how-to-escape-single-quotes-in-restructuredtext-when-converting-to-html-using-sp>`_.
 
