@@ -548,33 +548,6 @@ To add a table see this
 Please note we DO NOT follow the Sphinx method of counting and creating 
 `tables here <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#tables>`_.
 
-Dropdown Menus, Accordions or Collapsable Lists
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Dropdown menus are used extensively in the :ref:`release-notes`.
-To streamline the documentation and make it easier to read.
-Example::
-
-  .. dropdown:: title
-     Text in the dropdown box.
-
-What it will look like on the web:
-
-.. dropdown:: title
-   Text in the dropdown box.
-
-Please see the 
-`getting started <https://sphinx-design.readthedocs.io/en/latest/get_started.html>`_ 
-page.  Changes need to be made to the **config.py** and the 
-**requirements.rst** file.  (sphinx_design with an underscore needs to be added to 
-the **config.py** file. And sphinx-design with a dash needs to be added to the 
-**requirements.rst** file.  See the MET files for examples if needed.)
-
-This `Sphinx page <https://sphinx-design.readthedocs.io/en/latest/dropdowns.html>`_ 
-lists different ways to create dropdown menus.  This allows a search to work even when 
-the dropdown data isn’t visible, it will show find the information.  
-
-
 Converting tables into the new Sphinx format list
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If a table has already been created outside of Sphinx,
