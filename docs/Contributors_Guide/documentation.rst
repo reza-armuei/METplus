@@ -296,14 +296,14 @@ Links
 Linking to another Section
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The original section being linked to will need an 
+The original section being linked to will need a 
 ".. _pick_a_reference_name" so it can be referenced
 in the next section.  In this case we will use the 
 :ref:`user_configuration_file`.
 An example of this link can be seen
 in the Getting Started Chapter section 
 :ref:`running-metplus`
-Example Wrapper Use Case.  Example::
+Example Wrapper Use Case::
 
   .. _user_configuration_file:
          
@@ -573,14 +573,18 @@ LISA: should I create an example to link to?
 Dropdown Menus, Accordions or Collapsable Lists
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Dropdown menus are used extensively in the :ref:`release-notes`
+to streamline the documentation and make it easier to read.
 Example::
 
   .. dropdown:: title
+
      Text in the dropdown box.
 
 What it will look like on the web:
 
 .. dropdown:: title
+
    Text in the dropdown box.
 
 Please see the 
