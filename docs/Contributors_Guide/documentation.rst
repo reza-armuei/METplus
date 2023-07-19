@@ -664,6 +664,18 @@ This will show up as a broken link in the documentation.
 To keep this from happening put a backwards slash in 
 front of the underscore.  “FNN\\_”
 
+‘single quotes’
+^^^^^^^^^^^^^^^
+Single quotes tend to convert to a broken link.  To stop this from happening, 
+use backward slashes \ before and after the single quotes.  
+Example::
+
+  \’\single quotes\’\ 
+
+For more information, 
+`this page was helpful <https://stackoverflow.com/questions/17965655/how-to-escape-single-quotes-in-restructuredtext-when-converting-to-html-using-sp>`_.
+
+
 
 Sphinx modules
 --------------
