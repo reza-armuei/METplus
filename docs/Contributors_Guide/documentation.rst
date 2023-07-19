@@ -102,7 +102,7 @@ It will look like this on the web:
 * Item 2
 
   * First nested item
- * Second nested item
+  * Second nested item
 
 * Item 3
 
