@@ -19,6 +19,8 @@ Conventions
 We follow the conventions outlines in the link, along with some 
 additional METplus Component specific conventions:
 
+.. _create-chapters:
+
 Defining Chapters and Sections
 ------------------------------
 
@@ -49,16 +51,30 @@ and METplus::
   ^ for subsubsections
   " for paragraphs (as of yet, this isn't used in the METplus documentation.)
 
+Updating the index.rst File for Numbering Chapters and Sections
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If an underline is used with no text above or below it, 
-this will create a thin dividing line in the document.
-Example::
+Add 'numbered' in the **index.rst** file under the toctree section
+in order to add numbers to the chapters and sections.  
+This has to be done at the index level to keep the numbers 
+from starting over for each section.  Example::
 
-  ___________________
+  .. toctree::
+     :hidden:
+     :caption: Table of Contents
+     :numbered:
 
-It will look like this on the web:
+Reminder to delineate chapters and sections using the formatting in 
+:ref:`create-chapters`.
 
-_________________
+To limit the number of sections to 4::
+
+  :numbered: 4
+
+Change the number to get the desired number of visable sections.
+
+Here is some more information on 
+`Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_
 
 Numbering sections or bullets
 -----------------------------
@@ -112,10 +128,12 @@ Start the code below and indent 2 spaces for the actual code.
 The space above and below are necessary or it won't work.
 Example::
 
+  (blank line above)
   .. code-block:: ini
 
     cd example
     ./run_something.py
+    (blank line below)
 
 Please note:  We used to use  '.. code-block:: none'.  
 But this was creating problems.  
@@ -183,8 +201,19 @@ What to italicize:
 Underlining
 -----------
 
-Please DO NOT underline in Sphinx.  It is possible to make Sphinx
+Please DO NOT underline words in Sphinx.  It is possible to make Sphinx
 underline things but it goes against the natural order of things.
+
+If an underline is used with no text above or below it, 
+this will create a thin dividing line in the document.
+These are acceptable to use.
+Example::
+
+  ___________________
+
+It will look like this on the web:
+
+_________________
 
 
 Footnotes
