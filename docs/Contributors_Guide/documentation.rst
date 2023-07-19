@@ -21,7 +21,7 @@ Documentation Overview and Conventions
 The majority of the documentation is created using the Sphinx documentation
 generator tool, which was originally created for Python documentation.
 The documentation is created using
-`reStructuredText (rst) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_.
+`reStructuredText (RST) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_.
 This link provides a brief introduction to reST concepts and syntax, 
 intended to give authors enough information to create and modify the 
 documents productively. We follow the conventions outlines in the 
@@ -129,7 +129,7 @@ Also note, if just an asterisk is needed within a bolded section,
 use a backslash \. Or the bolding won’t work.
 Example::
 
-  rst:
+  RST:
   **Name_everything\*.txt**
   
 How it will look on the web:
@@ -191,7 +191,7 @@ Here is more information about
 Commenting out text
 -------------------
 
-If notes need to be made within rst, use a
+If notes need to be made within RST, use a
 blank line above and a ".. " to comment out text.
 Example::
 
@@ -566,7 +566,7 @@ need to be lined up under the colon::
   Following columns:      ="    - "&A2
 
 This will create the correct formatting for a Sphinx table.
-Once this is completed, copy the list into the rst documentation.  
+Once this is completed, copy the list into the RST documentation.  
 
 LISA: should I create an example to link to?
 
@@ -590,7 +590,7 @@ What it will look like on the web:
 Please see the 
 `getting started <https://sphinx-design.readthedocs.io/en/latest/get_started.html>`_ 
 page.  Changes need to be made to the **config.py** and the 
-**requirements.rst** file.  (sphinx_design with an underscore needs to be added to 
+**requirements.RST** file.  (sphinx_design with an underscore needs to be added to 
 the **config.py** file. And sphinx-design with a dash needs to be added to the 
 **requirements.rst** file.  See the MET files for examples if needed.)
 
