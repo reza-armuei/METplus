@@ -1,22 +1,20 @@
-*************
-Documentation
-*************
+**************************************
+Documentation Overview and Conventions
+**************************************
 
-Viewing METplus Documentation
-=============================
+Overview
+========
 
 The METplus documentation (beginning with version 3.0) is available
-`online <https://metplus.readthedocs.io/>`_.
+`online <https://metplus.readthedocs.io/>`_. The majority of the documentation 
+is created using the Sphinx documentation generator tool, which was originally 
+created for Python documentation. The documentation is created using 
+'reStructuredText (RST) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. 
+This link provides a brief introduction to RST concepts and syntax, intended 
+to give authors enough information to create and modify the documents productively.
 
-
-Doxygen Source Code Documentation
-=================================
-
-The source code documentation is coming soon.
-
-
-Documentation Overview and Conventions
-======================================
+Conventions
+===========
 
 The majority of the documentation is created using the Sphinx documentation
 generator tool, which was originally created for Python documentation.
@@ -663,21 +661,6 @@ Some of the names include an underscore, for instance, "FNNN\_".
 This will show up as a broken link in the documentation.  
 To keep this from happening put a backwards slash in 
 front of the underscore.  “FNN\\_”
-
-‘single quotes’
-^^^^^^^^^^^^^^^
-Single quotes tend to convert to a broken link.  To stop this from happening, 
-use backward slashes \ before and after the single quotes.  
-Example::
-
-  \’\single quotes\’\ 
-
-It will look like this on the web: \’\single quotes\’\  vs 'single quotes'
-
-For more information, 
-`this page was helpful <https://stackoverflow.com/questions/17965655/how-to-escape-single-quotes-in-restructuredtext-when-converting-to-html-using-sp>`_.
-
-
 
 Sphinx modules
 --------------
