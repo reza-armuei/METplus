@@ -74,7 +74,7 @@ To limit the number of sections to 4::
 Change the number to get the desired number of visable sections.
 
 Here is some more information on 
-`Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_
+`Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_.
 
 Numbering sections or bullets
 -----------------------------
@@ -254,6 +254,31 @@ Math Equations
 
 Here is more information about 
 `Sphinx documentation for referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
+
+Matrix
+------
+
+This is not a common item.  Here is a matrix from 
+`MET SEEPS <https://met.readthedocs.io/en/develop/Users_Guide/appendixC.html#stable-equitable-error-in-probability-space-seeps>`_.
+Example::
+
+  .. math:: \{S^{S}_{vf}\} = \frac{1}{2}
+            \begin{Bmatrix}
+               0 & \frac{1}{1-p_1} & \frac{1}{p_3} + \frac{1}{1-p_1}\\
+               \frac{1}{p_1} & 0 & \frac{1}{p_3}\\
+               \frac{1}{p_1} + \frac{1}{1-p_3} & \frac{1}{1-p_3} & 0
+            \end{Bmatrix}
+
+It will look like this on the web:
+
+.. math:: \{S^{S}_{vf}\} = \frac{1}{2}
+          \begin{Bmatrix}
+             0 & \frac{1}{1-p_1} & \frac{1}{p_3} + \frac{1}{1-p_1}\\
+             \frac{1}{p_1} & 0 & \frac{1}{p_3}\\
+             \frac{1}{p_1} + \frac{1}{1-p_3} & \frac{1}{1-p_3} & 0
+          \end{Bmatrix}
+
+Here is more information about `matrices <https://www.overleaf.com/learn/latex/Matrices>`_.
 
 Symbols
 -------
