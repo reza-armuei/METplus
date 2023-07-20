@@ -632,29 +632,33 @@ This example is for a 3 column table.
 
 In column G we will create the nomenclature for the Sphinx table.
 In cells G1 through G3 add the list-table, width,header-rows
-information and a blank line after this information.
+information and a blank line after this information to match
+the table format that will be needed for Sphinx.
 
 Next the nomenclature for the Sphinx list needs to be created.
-The asterisk denotes the row. 
+The asterisk denotes the start of a row. 
 Remember the asterisks need to be lined up under the colon 
 from the width and header rows from the :ref:`creating-tables` section.
 Use the created information from the ArrayFormula in column F to
 complete the new list.
 Enter the below information in G5 to capture the first
 header row.  The spaces are need to correctly allign the
-asterics and dashes::
+asterics and dashes.  (2 spaces before the asterics)::
 
   ="  * - "&F5
 
-For the next twocells, G6 adn G7 enter the below information.  Again,
-the spaces are to correctly align the new list::
+For the next two cells, G6 and G7 enter the below information.  Again,
+the spaces are to correctly align the new list.  (In this case,
+there are 4 spaces before the dash.)::
   
   ="    - "&F6
   ="    - "&F7
   
 Drag and drop G5 through G7 into the remaining cells below.  
 This will create the correct formatting for a Sphinx table.
-Once this is completed, copy the list into the RST documentation.  
+Copy the list created in column G.
+In this case, column G1 through G19
+will be copied into the RST documentation. 
 
 Here is a visual example:
 
