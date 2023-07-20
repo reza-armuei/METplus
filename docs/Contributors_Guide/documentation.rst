@@ -249,13 +249,15 @@ Here is more information about
   
 Math Equations
 --------------
-  * use :math:\mathbf
-  * Then put what is needed in bolded brackets.
+
+To creat math equations with an option to bold 
+use ':math:\mathbf'. Then put what is to be
+bolded inbetween 2 sets of asterisks'\*\*'.
     Example::  
     
       :math:\mathbf **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
       
-  * It will look like this on the web: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
+It will look like this on the web: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
 
 Here is more information about 
 `Sphinx documentation for referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
@@ -288,25 +290,26 @@ Here is more information about `matrices <https://www.overleaf.com/learn/latex/M
 Symbols
 -------
 
-  * The below will create a Delta triangle symbol.
-    Example:: 
+The below will create a Delta triangle symbol.
+Example:: 
     
-      :math:`Delta` 
+  :math:`Delta` 
       
-  * It will look like this on the web: :math:`\Delta`
+It will look like this on the web: :math:`\Delta`
 
 Command Line Syntax
 -------------------
 
-To document command line syntax, use the “literal block” syntax.
-Indent the line two spaces with two colons at the end of the sentence"::", 
-with one line of white space below that,
-two indented spaces, "Write my command here" then one more line of
+To document command line syntax, use the 'literal block' syntax.
+Indent the line two spaces with two colons at the end of the sentence"::', 
+with one line of white space below that'
+two indented spaces, 'Write my command here' then one more line of
 white space. Example::
 
   Some text::
 
     Write my command here
+    (blank line below)
     
     
 It will look like this on the web (Please note, this will remove one
@@ -316,12 +319,10 @@ of the 2 colons):
   
     Write my command here
 
-Note: there needs to be one line of 
-whitespace above and below the command.
-
 Here is some more information on 
 `Sphinx literal blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-literal-blocks>`_.
-And here is some extra detail about `literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>`_.
+And here is some extra detail about 
+`literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>`_.
 
 Creating Carriage Returns and New Lines
 ---------------------------------------
@@ -342,12 +343,14 @@ To keep the text on separate lines, use the "|" with a
 space at the beginning of each new line.
 Also include One line of blank space above and below text.
 Example::
-  
+
+  blank line above
   | This text will
   | Be
   | Rendered
   | On separate lines
   | Like this
+  blank line below
 
 It will look like this on the web:
 
@@ -455,17 +458,19 @@ Linking to a Table
 This is similar to linking to another section.
 Example::
 
-  .. _table_name_1:
+  .. _practice_table:
          
   .. list-table:: table name one
 
 Then to reference this table::
 
-  :ref:`table_name_1`
+  :ref:`practice_table`
   
 This will link to the table.
 
-The web link should look like this: LISA UPDATE THIS. Ask Julie P. for a good example
+The web link should look like this: 
+
+:ref:`practice_table`
 
 Linking to a Variable in the Glossary
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -671,6 +676,8 @@ Here is a visual example:
 .. image:: figure/practice_table.png
 
 And here is the table:
+
+.. _practice_table:
 
 .. list-table:: Practice table 
   :widths: auto
