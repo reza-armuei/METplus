@@ -27,8 +27,11 @@ Defining Chapters and Sections
 Chapter and section headers are created by underlining 
 the section title with one of the below punctuation characters.
 This must be EXACTLY as long as the text line or there will be a Github error message.
-`Sphinx documentation on chapters and sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`_
-
+`Sphinx documentation on chapters and sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`_.
+  
+The chapter title has the asterics above and below to
+make it stand out.  This isn't necessary but it has
+become convention for the METplus documentation.
 Here is an example of a chapter title::
 
   *************
@@ -54,7 +57,7 @@ and METplus::
 Updating the index.rst File for Numbering Chapters and Sections
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add 'numbered' in the **index.rst** file under the 'toctree' section
+Add ':numbered:' in the **index.rst** file under the 'toctree' section
 in order to add numbers to the chapters and sections.  
 This has to be done at the index level to keep the numbers 
 from starting over for each section.  Example::
@@ -67,7 +70,8 @@ from starting over for each section.  Example::
 Reminder to delineate chapters and sections using the formatting in 
 :ref:`create-chapters`.
 
-To limit the number of sections to 4::
+To limit the number of sections visible in the table of
+contents to 4::
 
   :numbered: 4
 
@@ -79,22 +83,24 @@ Here is some more information on the
 Numbering sections or bullets
 -----------------------------
 
-Here are some examples::
+It is possible to use actual numbers or "#" to
+create a numbered list. Here are some examples::
 
   1.
   Start the text section below for no indentation.
 
-  1. This text block will be indented.
+  # This text block will be indented.
 
 It will look like this on the web:
 
 1.
 Start the text section below for no indentation.
 
-1. This text block will be indented.
+# This text block will be indented.
 
 
-If a subsection is needed, include a blank line and indents::
+Use asterisks for bullets. If a subsection is needed, 
+include a blank line and indents.  Example::
 
   * Item 1
   * Item 2
@@ -282,7 +288,7 @@ Here is more information about `matrices <https://www.overleaf.com/learn/latex/M
 Symbols
 -------
 
-  * The below will create a Delta triangle symbol:
+  * The below will create a Delta triangle symbol.
     Example:: 
     
       :math:`Delta` 
