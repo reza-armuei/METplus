@@ -54,7 +54,7 @@ and METplus::
 Updating the index.rst File for Numbering Chapters and Sections
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add 'numbered' in the **index.rst** file under the toctree section
+Add 'numbered' in the **index.rst** file under the 'toctree' section
 in order to add numbers to the chapters and sections.  
 This has to be done at the index level to keep the numbers 
 from starting over for each section.  Example::
@@ -71,9 +71,9 @@ To limit the number of sections to 4::
 
   :numbered: 4
 
-Change the number to get the desired number of visable sections.
+Change the number to get the desired number of visible sections.
 
-Here is some more information on 
+Here is some more information on the
 `Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_.
 
 Numbering sections or bullets
@@ -82,14 +82,14 @@ Numbering sections or bullets
 Here are some examples::
 
   1.
-  Start text section below for no indentation.
+  Start the text section below for no indentation.
 
   1. This text block will be indented.
 
 It will look like this on the web:
 
 1.
-Start text section below for no indentation.
+Start the text section below for no indentation.
 
 1. This text block will be indented.
 
@@ -159,7 +159,6 @@ Also note, if just an asterisk is needed within a bolded section,
 use a backslash \. Or the bolding won’t work.
 Example::
 
-  RST:
   **Name_everything\*.txt**
   
 How it will look on the web:
@@ -284,7 +283,7 @@ Symbols
 -------
 
   * The below will create a Delta triangle symbol:
-    Eample:: 
+    Example:: 
     
       :math:`Delta` 
       
@@ -321,7 +320,7 @@ And here is some extra detail about `literal blocks <https://docutils.sourceforg
 Creating Carriage Returns and New Lines
 ---------------------------------------
 
-The language, rst, does not obey carriage returns. Here is an
+The language, RST, does not obey carriage returns. Here is an
 example of just using carriage returns:
 
   | This text will
@@ -382,10 +381,10 @@ please use backticks and note that the first underscore isn't used
 in the reference.
 Example::
 
-  Please see the :ref:`user_configuration_file`.
+  Please see the :ref:`user_configuration_file`
 
 It will look like this on the web: 
-Please see the :ref:`user_configuration_file`.
+Please see the :ref:`user_configuration_file`
 
 Linking Using Reference Numbers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -394,24 +393,24 @@ To have a number used for sections, tables, figures etc.
 instead of the title use 'numref'.
 Example::
 
-  Please referr to section :numref:`user_configuration_file`.
+  Please refer to section :numref:`user_configuration_file`
 
 It will look like this on the web.  This version shows the 
 numbered section, not the name:  
 
-Please referr to section :numref:`user_configuration_file`.
+Please refer to section :numref:`user_configuration_file`
 
 Here is some more information on 
 `Links <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html>`_.
 
-If the link is in another chapter or document, and the a different name
+If the link is in another chapter or document, and a different name
 or title would be more appropriate, use the example below.
 Please note, there is no space between text and the less than symbol "<".
 Example::
 
-  :ref:`<Text to show up<user_configuration_file>`.
+  :ref:`<Text to show up<user_configuration_file>`
 
-It will look like this on the web. :ref:`Text to show up<user_configuration_file>`.
+It will look like this on the web. :ref:`Text to show up<user_configuration_file>`
 
 
 Linking to METplus Use Cases (Python code)
@@ -514,7 +513,7 @@ It will look like this on the web:
    :width: 400
 
 Please note,
-all of the images are stored in the  
+all of the images are stored in  
 their own directory. In this case it would be,
 *METplus/docs/Contributors_Guide/figure/*.
 In the Contributor's Guide, the beginning of the
@@ -540,7 +539,7 @@ directory. In this case it would be,
 *METplus/docs/Contributors_Guide/figure/*.
 This is also where the images are stored.
 We will use the image **1Issue-before-created.png**, 
-located in the figure directory. This is an exampe
+located in the figure directory. This is an example
 from the 
 `GitHub Workflow Chapter <https://metplus.readthedocs.io/en/latest/Contributors_Guide/github_workflow.html#github-workflow>`_.
 Below is an example::
@@ -576,6 +575,8 @@ to be added to the **config.py** file::
 Please note, the automatic numbering of figures 
 is NOT set up in the Contributor's Guide, but it is set up in
 the User's Guide **config.py** file.
+
+.. _creating-tables:
 
 Tables
 ------
@@ -625,8 +626,12 @@ This is for a 3 column table.
 
   =ArrayFormula(transpose(split(concatenate(A1:C&char(9)),char(9))))
 
-In the next column over add this formula.  Remember the asterisks
-need to be lined up under the colon::
+Leave the next column blank.  Then in the column after the blank 
+column add the below formula. This will create the nomenclature 
+for the Sphinx table.  The asterisk denotes the row. 
+Remember the asterisks need to be lined up under the colon 
+from the width and header rows from the :ref:`creating-tables` section.
+Example::
 
   First row:              ="  * - "&A1
   Following columns:      ="    - "&A2
@@ -691,8 +696,8 @@ It can be time consuming to wait for ReadTheDocs to build.
 To quickly test how something will look in Sphinx, use this
 web page that has been created on the machine, 'seneca'. 
 http://seneca.rap.ucar.edu:5000/
-Please note this is not a secure website. (It is an http, not https site.)  
-The user must be logged into the VPN for this to work.  
+Please note this is not a secure website. (It is an http, not https site.)
+The user must be logged into the VPN for this to work.
 Chrome browsers won’t open the site but Firefox will open it. 
 Jeff Stolte re-created this website using this
 `github issue <https://github.com/faust93/livesphinx>`_.
@@ -700,7 +705,7 @@ Jeff Stolte re-created this website using this
 Double Dashes
 ^^^^^^^^^^^^^
 
-This is helpful for python commands.  
+This is helpful for python commands.
 Use two back slashes between the dashes 
 Example::
 
@@ -710,7 +715,7 @@ Backslash
 ^^^^^^^^^
 
 Using a backslash "\" is handy when using
-asterics "\*", double dashes "-\\-", and
+asterisks "\*", double dashes "-\\-", and
 other characters that aren't formatting correctly.
 Example::
 
@@ -725,8 +730,8 @@ Here is some more information on
 Underscores
 ^^^^^^^^^^^
 
-Some of the names include an underscore, for instance, "FNNN\_".  
-This will show up as a broken link in the documentation.  
+Some of the names include an underscore, for instance, "FNNN\_".
+This will show up as a broken link in the documentation.
 To keep this from happening put a backwards slash in 
 front of the underscore.  “FNN\\_”
 
@@ -742,7 +747,7 @@ documentation:
   * sphinx-design==0.3.0
 
 Which versions are being used by the current METplus release can be viewed
-by looking at either *METplus/environment.yml* or *METplus/docs/requirements.txt*.  
+by looking at either *METplus/environment.yml* or *METplus/docs/requirements.txt*.
 If the desire is to replicate all the
 packages employed by METplus, please refer to :numref:`conda_env` of the
 Contributor's Guide.
