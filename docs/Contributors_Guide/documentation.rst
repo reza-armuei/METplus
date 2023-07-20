@@ -83,20 +83,20 @@ Here is some more information on the
 Numbering sections or bullets
 -----------------------------
 
-It is possible to use actual numbers or "#" to
+It is possible to use actual numbers or "#." to
 create a numbered list. Here are some examples::
 
   1.
   Start the text section below for no indentation.
 
-  # This text block will be indented.
+  #. This text block will be indented.
 
 It will look like this on the web:
 
 1.
 Start the text section below for no indentation.
 
-# This text block will be indented.
+#. This text block will be indented.
 
 
 Use asterisks for bullets. If a subsection is needed, 
@@ -184,7 +184,7 @@ Italics
 
 How to italicize:
 
-  * To italicize text use 1 asterisk before and after the italics section.
+  * To italicize text use an asterisk before and after the italics section.
     Example::
       
       *Italicized text* 
