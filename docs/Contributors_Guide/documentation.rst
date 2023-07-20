@@ -640,18 +640,47 @@ Remember the asterisks need to be lined up under the colon
 from the width and header rows from the :ref:`creating-tables` section.
 Use the created information from the ArrayFormula in column F to
 complete the new list.
-Example::
+Enter the below information in G5 to capture the first
+header row.  The spaces are need to correctly allign the
+asterics and dashes::
 
-  First row:              ="  * - "&F5
-  Following columns:      ="    - "&F6
-  Following columns:      ="    - "&F7
+  ="  * - "&F5
 
+For the next twocells, G6 adn G7 enter the below information.  Again,
+the spaces are to correctly align the new list::
+  
+  ="    - "&F6
+  ="    - "&F7
+  
+Drag and drop G5 through G7 into the remaining cells below.  
 This will create the correct formatting for a Sphinx table.
 Once this is completed, copy the list into the RST documentation.  
 
 Here is a visual example:
 
 .. image:: figure/practice_table.png
+
+And here is the table:
+
+.. list-table:: Practice table 
+  :widths: auto
+  :header-rows: 1
+
+  * - Header 1
+    - Header 2
+    - Header 3
+  * - column 1, row 1
+    - column 2, row 1
+    - column 3, row 1
+  * - column 1, row 2
+    - column 2, row 2
+    - column 3, row 2
+  * - column 1, row 3
+    - column 2, row 3
+    - column 3, row 3
+  * - column 1, row 4
+    - column 2, row 4
+    - column 3, row 4
 
 Dropdown Menus, Accordions or Collapsable Lists
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
