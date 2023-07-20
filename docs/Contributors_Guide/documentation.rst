@@ -253,7 +253,7 @@ Math Equations
 To creat math equations with an option to bold 
 use ':math:\mathbf'. Then put what is to be
 bolded inbetween 2 sets of asterisks'\*\*'.
-    Example::  
+Example::  
     
       :math:\mathbf **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
       
