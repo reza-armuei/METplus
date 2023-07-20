@@ -615,31 +615,43 @@ To add a table see this
 Please note we DO NOT follow the Sphinx method of counting and creating 
 `tables here <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#tables>`_.
 
-Converting tables into the new Sphinx format list
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Converting tables into Sphinx format list
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If a table has already been created outside of Sphinx,
-copy the table into google sheets.  
-Click on a cell outside of the tables rows and
-columns. Put the below formula to turn the table into a list.  
-This is for a 3 column table.  
+copy the table into google sheets. Copy the first row
+and column into cell A1.  In the below example,
+we will create the new Sphinx table in column G.
+We will use column F to create the old table, into
+the new Sphinx list.  In this example, click on
+cell F5 and use the below formula to turn the old
+table into a new list.  
+This example is for a 3 column table.  
 (for 4 columns change the ‘C’ to a ‘D’.)::
 
   =ArrayFormula(transpose(split(concatenate(A1:C&char(9)),char(9))))
 
-Leave the next column blank.  Then in the column after the blank 
-column add the below formula. This will create the nomenclature 
-for the Sphinx table.  The asterisk denotes the row. 
+In column G we will create the nomenclature for the Sphinx table.
+In cells G1 through G3 add the list-table, width,header-rows
+information and a blank line after this information.
+
+Next the nomenclature for the Sphinx list needs to be created.
+The asterisk denotes the row. 
 Remember the asterisks need to be lined up under the colon 
 from the width and header rows from the :ref:`creating-tables` section.
+Use the created information from the ArrayFormula in column F to
+complete the new list.
 Example::
 
-  First row:              ="  * - "&A1
-  Following columns:      ="    - "&A2
+  First row:              ="  * - "&F5
+  Following columns:      ="    - "&F6
+  Following columns:      ="    - "&F7
 
 This will create the correct formatting for a Sphinx table.
 Once this is completed, copy the list into the RST documentation.  
 
-LISA: should I create an example to link to?
+Here is a visual example:
+
+.. image:: figure/practice_table.png
 
 Dropdown Menus, Accordions or Collapsable Lists
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
