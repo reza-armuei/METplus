@@ -57,7 +57,7 @@ and METplus::
 Updating the index.rst File for Numbering Chapters and Sections
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add ':numbered:' in the **index.rst** file under the 'toctree' section
+Add ":numbered:" in the **index.rst** file under the "toctree" section
 in order to add numbers to the chapters and sections.  
 This has to be done at the index level to keep the numbers 
 from starting over for each section.  Example::
@@ -141,10 +141,10 @@ Example::
     ./run_something.py
     (blank line below)
 
-Please note:  We used to use  '.. code-block:: none'.  
+Please note:  We used to use  ".. code-block:: none".  
 But this was creating problems.  
 It is possible to use the name of the program, such as 
-'python' or ‘bash’ instead of ‘none’.
+"python" or "bash instead of "none".
 
 Here is more information about 
 `Sphinx code blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`_.
@@ -251,8 +251,8 @@ Math Equations
 --------------
 
 To creat math equations with an option to bold 
-use ':math:\mathbf'. Then put what is to be
-bolded inbetween 2 sets of asterisks'\*\*'.
+use ":math:\mathbf". Then put what is to be
+bolded inbetween 2 sets of asterisks"\*\*".
 Example::  
     
       :math:\mathbf **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
@@ -300,11 +300,11 @@ It will look like this on the web: :math:`\Delta`
 Command Line Syntax
 -------------------
 
-To document command line syntax, use the 'literal block' syntax.
-Indent the line two spaces with two colons at the end of the sentence"::', 
-with one line of white space below that'
-two indented spaces, 'Write my command here' then one more line of
-white space. Example::
+To document command line syntax, use the "literal block" syntax.
+Indent the line two spaces with two colons at the end of the sentence, 
+with one line of white space below that,
+then four indented spaces on the next line, "Write my command here" 
+then one more blank line below. Example::
 
   Some text::
 
@@ -399,7 +399,7 @@ Linking Using Reference Numbers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To have a number used for sections, tables, figures etc. 
-instead of the title use 'numref'.
+instead of the title use "numref".
 Example::
 
   Please refer to section :numref:`user_configuration_file`
@@ -477,12 +477,11 @@ Linking to a Variable in the Glossary
 
 In this case, "\:term:" is used. This lets Sphinx know
 to look for the link in the glossary. In this example
-we will use the variable name,   "USER_SCRIPT_COMMAND" 
-Example::
+we will use the variable name,   "USER_SCRIPT_COMMAND"::
 
   :term:`USER_SCRIPT_COMMAND`
 
-It will look like this on the web: :term:`USER_SCRIPT_COMMAND`.
+It will look like this on the web: :term:`USER_SCRIPT_COMMAND`
 
 This will link directly to the glossary. Here is some more information on 
 `links to a glossary <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary.html#link-a-term-to-its-a-glossary-entry>`_.
@@ -504,8 +503,7 @@ Example::
   Get the latest news at `DTC`_.
   .. _DTC: https://dtcenter.org
 
-The web link should look like this. Please note, the text
-is all on one line:
+The web link should look like this:
 Get the latest news at `DTC`_.
 
 Images
@@ -528,8 +526,8 @@ all of the images are stored in
 their own directory. In this case it would be,
 *METplus/docs/Contributors_Guide/figure/*.
 In the Contributor's Guide, the beginning of the
-file name refers to the section the image
-will be in.
+file name refers to the section where the image
+will be located.
 
 Here is some more information on 
 `images <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#images>`_.
@@ -545,8 +543,8 @@ To add a figure, use the following syntax::
   .. figure:: figure/1Issue-before-created.png
 
 Please note,
-the figures are stored in a separate
-directory. In this case it would be,
+the figures are stored in a separate directory
+from the RST files. In this case it would be,
 *METplus/docs/Contributors_Guide/figure/*.
 This is also where the images are stored.
 We will use the image **1Issue-before-created.png**, 
@@ -641,6 +639,10 @@ This example is for a 3 column table.
 
   =ArrayFormula(transpose(split(concatenate(A1:C&char(9)),char(9))))
 
+Here is a visual example:
+
+.. image:: figure/practice_table.png
+
 In column G we will create the nomenclature for the Sphinx table.
 In cells G1 through G3 add the list-table, width,header-rows
 information and a blank line after this information to match
@@ -671,15 +673,11 @@ Copy the list created in column G.
 In this case, column G1 through G19
 will be copied into the RST documentation. 
 
-Here is a visual example:
-
-.. image:: figure/practice_table.png
-
-And here is the table:
+Here is the table:
 
 .. _practice_table:
 
-.. list-table:: Practice table 
+.. list-table:: Practice Table 
   :widths: auto
   :header-rows: 1
 
@@ -752,7 +750,7 @@ Testing Sphinx Nomenclature on a Web Page
 
 It can be time consuming to wait for ReadTheDocs to build.
 To quickly test how something will look in Sphinx, use this
-web page that has been created on the machine, 'seneca'. 
+web page that has been created on the machine, "seneca". 
 http://seneca.rap.ucar.edu:5000/
 Please note this is not a secure website. (It is an http, not https site.)
 The user must be logged into the VPN for this to work.
@@ -769,10 +767,12 @@ Example::
 
   -\\-command
 
+It will look like this on the web: -\\-command
+
 Backslash
 ^^^^^^^^^
 
-Using a backslash "\" is handy when using
+Using a backslash "\\" is handy when using
 asterisks "\*", double dashes "-\\-", and
 other characters that aren't formatting correctly.
 Example::
@@ -780,7 +780,8 @@ Example::
   \*
 
 This will format as just an asterisk without turning
-into an unwanted bullet point.
+into an unwanted bullet point. 
+It will look like this on the web: \*
 
 Here is some more information on 
 `Sphinx and backslashes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
@@ -1021,7 +1022,7 @@ This script does the following:
 * Removes unwanted text from use case documentation
 * Copies doxygen files into* _build/html* for easy deployment
 * Creates symbolic links under Users_Guide to the directories under
-  'generated' to preserve old URL paths
+  "generated" to preserve old URL paths
 
 The html files that are created can be found in the *METplus/docs/_build/html*
 directory.  The web browser can point to this directory by entering
