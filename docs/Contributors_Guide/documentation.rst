@@ -167,9 +167,7 @@ Example::
 
   **Name_everything\*.txt**
   
-How it will look on the web:
- 
-**Name_everything\*.txt**
+How it will look on the web: **Name_everything\*.txt**
 
 Here is more information about 
 `Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
@@ -261,6 +259,9 @@ It will look like this on the web: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
 
 Here is more information about 
 `Sphinx documentation for referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
+
+There are quite a few examples in
+`MET appendix C <https://met.readthedocs.io/en/develop/Users_Guide/appendixC.html#appendix-c-verification-measures>`_.
 
 Matrix
 ------
