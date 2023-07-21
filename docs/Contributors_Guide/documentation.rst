@@ -3,7 +3,7 @@ Documentation Overview and Conventions
 **************************************
 
 Overview
-========
+=======
 
 The METplus documentation (beginning with version 3.0) is available
 `online <https://metplus.readthedocs.io/>`_. The majority of the documentation 
@@ -230,11 +230,20 @@ often but here is an example::
   .. [#] This is the actual footnote.
 
 Another option is to use text in the footnotes, to keep the numbering the same
-for each organization. Example:
+for each organization. Example::
+ 
+  PersonA [#NCAR]_
+  PersonB [#UCAR]_
+  PersonC [#NCAR]_
 
-Person1 [#NCAR]_
-Person2 [#UCAR]_
-Person3 [#NCAR]_
+  .. [#NCAR] National Center for Atmospheric Research
+  .. [#UCAR] University Center for Atmospheric Research
+
+It will look like this on the web:
+
+PersonA [#NCAR]_
+PersonB [#UCAR]_
+PersonC [#NCAR]_
 
 .. [#NCAR] National Center for Atmospheric Research
 .. [#UCAR] University Center for Atmospheric Research
