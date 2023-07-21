@@ -16,8 +16,9 @@ to give authors enough information to create and modify the documents productive
 Conventions
 ===========
 
-We follow the conventions outlines in the link, along with some 
-additional METplus Component specific conventions:
+We follow the conventions outlined in the 
+`reStructuredText Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_, 
+along with some additional METplus Component specific conventions:
 
 .. _create-chapters:
 
@@ -27,7 +28,6 @@ Defining Chapters and Sections
 Chapter and section headers are created by underlining 
 the section title with one of the below punctuation characters.
 This must be EXACTLY as long as the text line or there will be a Github error message.
-`Sphinx documentation on chapters and sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`_.
   
 The chapter title has the asterics above and below to
 make it stand out.  This isn't necessary but it has
@@ -41,13 +41,13 @@ Here is an example of a chapter title::
 
 Include one line of whitespace below the last line of asterisks or it won't work.
 
-Below is the convention that is used in the Python Developer’s Guide
-and METplus::
+Below is the 
+`convention <https://metplus.readthedocs.io/en/feature_1667_updating_overview/Contributors_Guide/documentation.html#defining-chapters-and-sections>`_ 
+that is used. in the Python Developer’s Guide and METplus::
   
   # with overline, for parts (e.g. the RTD documentation for the component 
     (i.e. docs/index.rst), each guide (e.g. User's Guide, Contributor's Guide) 
     (i.e. docs/Users_Guide/index.rst, docs/Contributors_Guide/index.rst))
-  * with overline, for chapters
   * with overline, for chapters
   = for sections
   - for subsections (this is a dash, not an underline.)
@@ -222,12 +222,22 @@ _________________
 Footnotes
 ---------
 
-Footnotes aren't used often but here is an example::
+Footnotes are used in the 
+`MET version notes <https://met.readthedocs.io/en/develop/index.html>`_.
+often but here is an example::
 
   [#]_  Use this where the footnote will go in the paragraph.  # will fill in with a number
   .. [#] This is the actual footnote.
 
-LISA link to an example of footnotes.
+Another option is to use text in the footnotes, to keep the numbering the same
+for each organization. Example:
+
+Person1 [#NCAR]_
+Person2 [#UCAR]_
+Person3 [#NCAR]_
+
+.. [#NCAR] National Center for Atmospheric Research
+.. [#UCAR] University Center for Atmospheric Research
 
 Here is more information about 
 `Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_.
@@ -564,6 +574,9 @@ Here is how it will look on the web:
 
 	Comments for the figure.
 
+Here is some information on 
+`Sphinx figures <https://docutils.sourceforge.io/docs/ref/rst/directives.html#figure>`_.
+
 Here is some extra information on 
 `figures <https://lpn-doc-sphinx-primer-devel.readthedocs.io/concepts/images.html>`_. 
 
@@ -621,9 +634,8 @@ The table will look like this on the web:
      - Row 2, column 2
 
 To add a table see this 
-`page <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/tables.html>`_.
-Please note we DO NOT follow the Sphinx method of counting and creating 
-`tables here <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#tables>`_.
+`page <https://docutils.sourceforge.io/docs/ref/rst/directives.html#list-table>`_
+which has information on list tables.
 
 Converting tables into Sphinx format list
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -751,13 +763,14 @@ Testing Sphinx Nomenclature on a Web Page
 
 It can be time consuming to wait for ReadTheDocs to build.
 To quickly test how something will look in Sphinx, use this
-web page that has been created on the machine, "seneca". 
-http://seneca.rap.ucar.edu:5000/
-Please note this is not a secure website. (It is an http, not https site.)
+`web page <http://seneca.rap.ucar.edu:5000/>`_.
+Please note users must have access to the machine, "seneca", 
+and the VPN.  This is not a secure website. 
+(It is an http, not https site.)
 The user must be logged into the VPN for this to work.
 Chrome browsers won’t open the site but Firefox will open it. 
-Jeff Stolte re-created this website using this
-`github issue <https://github.com/faust93/livesphinx>`_.
+To use this on another machine, here is a link to the 
+`software <https://github.com/faust93/livesphinx>`_.
 
 Double Dashes
 ^^^^^^^^^^^^^
