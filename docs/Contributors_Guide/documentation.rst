@@ -270,9 +270,9 @@ Here is more information about
 Math Equations
 --------------
 
-To creat math equations with an option to bold 
+To create math equations with an option to bold 
 use ":math:\mathbf". Then put what is to be
-bolded inbetween 2 sets of asterisks"\*\*".
+bolded in between 2 sets of asterisks"\*\*".
 Example::  
     
       :math:\mathbf **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
@@ -742,7 +742,7 @@ What it will look like on the web:
 Please see the 
 `getting started <https://sphinx-design.readthedocs.io/en/latest/get_started.html>`_ 
 page.  Changes need to be made to the **config.py** and the 
-**requirements.RST** file.  (sphinx_design with an underscore needs to be added to 
+**requirements.rst** file.  (sphinx_design with an underscore needs to be added to 
 the **config.py** file. And sphinx-design with a dash needs to be added to the 
 **requirements.rst** file.  See the MET files for examples if needed.)
 
