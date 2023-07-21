@@ -3,7 +3,7 @@ Documentation Overview and Conventions
 **************************************
 
 Overview
-=======
+========
 
 The METplus documentation (beginning with version 3.0) is available
 `online <https://metplus.readthedocs.io/>`_. The majority of the documentation 
@@ -27,7 +27,10 @@ Defining Chapters and Sections
 
 Chapter and section headers are created by underlining 
 the section title with one of the below punctuation characters.
-This must be EXACTLY as long as the text line or there will be a Github error message.
+This must be EXACTLY as long as the text line or there will be a 
+Github error message, "Process completed with exit code 1."
+In the **documentation_warnings.log** there will be a line number
+and the message, "WARNING: Title underline too short." Or too long.
   
 The chapter title has the asterics above and below to
 make it stand out.  This isn't necessary but it has
