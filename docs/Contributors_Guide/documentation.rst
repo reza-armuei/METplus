@@ -3,7 +3,7 @@ Documentation Overview and Conventions
 **************************************
 
 Overview
-===========
+======
 
 The METplus documentation (beginning with version 3.0) is available
 `online <https://metplus.readthedocs.io/>`_. The majority of the documentation 
