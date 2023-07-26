@@ -37,8 +37,8 @@ stand out. An overline above isn’t necessary but it has become a
 convention for the METplus documentation. If the overline and
 underline are not the same length there will be a error
 message (i.e. CRITICAL: Title overline & underline mismatch.)
-Here is an example of a chapter title:
-
+Here is an example of a chapter title::
+  
   *************
   Chapter Title
   *************
