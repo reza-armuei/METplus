@@ -11,7 +11,7 @@ is created using the Sphinx documentation generator tool, which was originally
 created for Python documentation. The documentation is created using 
 `reStructuredText (RST) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. 
 This link provides a brief introduction to RST concepts and syntax, intended 
-to give authors enough information to create and modify the documents productively.
+to give authors enough information to create and modify the documents productively. 
 
 Conventions
 ===========
