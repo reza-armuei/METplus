@@ -8,7 +8,7 @@ Overview
 The METplus documentation (beginning with version 3.0) is available
 `online <https://metplus.readthedocs.io/>`_. The majority of the documentation 
 is created using the Sphinx documentation generator tool, which was originally 
-created for Python documentation. The documentation is created using 
+created for Python documentation. The METplus documentation is created using 
 `reStructuredText (RST) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_. 
 This link provides a brief introduction to RST concepts and syntax, intended 
 to give authors enough information to create and modify the documents productively. 
@@ -18,7 +18,7 @@ Conventions
 
 We follow the conventions outlined in the 
 `reStructuredText Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_, 
-along with some additional METplus Component specific conventions:
+along with some additional METplus component specific conventions.
 
 .. _create-chapters:
 
@@ -28,25 +28,29 @@ Defining Chapters and Sections
 Chapter and section headers are created by underlining 
 the section title with one of the below punctuation characters.
 This must be EXACTLY as long as the text line or there will be a 
-Github error message, "Process completed with exit code 1."
+warning message (e.g. WARNING: Title underline too short.) 
 In the **documentation_warnings.log** there will be a line number
 and the message, "WARNING: Title underline too short." Or too long.
   
-The chapter title has the asterics above and below to
-make it stand out.  This isn't necessary but it has
-become convention for the METplus documentation.
-Here is an example of a chapter title::
+The chapter title has the asterisks above and below to make it
+stand out. An overline above isn’t necessary but it has become a
+convention for the METplus documentation. If the overline and
+underline are not the same length there will be a error
+message (i.e. CRITICAL: Title overline & underline mismatch.)
+Here is an example of a chapter title:
 
   *************
   Chapter Title
   *************
   
 
-Include one line of whitespace below the last line of asterisks or it won't work.
+Include one line of whitespace below the last line of asterisks or it won't be
+formatted properly.
 
 Below is the 
-`convention <https://metplus.readthedocs.io/en/feature_1667_updating_overview/Contributors_Guide/documentation.html#defining-chapters-and-sections>`_ 
-that is used. in the Python Developer’s Guide and METplus::
+`convention <https://metplus.readthedocs.io/en/feature_1667_updating_overview/Contributors_Guide/documentation.html#conventions>`_ 
+that is used in the
+`reStructured Text Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`_ and METplus::
   
   # with overline, for parts (e.g. the RTD documentation for the component 
     (i.e. docs/index.rst), each guide (e.g. User's Guide, Contributor's Guide) 
@@ -60,28 +64,32 @@ that is used. in the Python Developer’s Guide and METplus::
 Updating the index.rst File for Numbering Chapters and Sections
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add ":numbered:" in the **index.rst** file under the "toctree" section
+Add ":numbered:" in the **index.rst** file under the "toctree" directive
 in order to add numbers to the chapters and sections.  
-This has to be done at the index level to keep the numbers 
-from starting over for each section.  Example::
+This needs to be added at the index level to keep the numbers 
+from starting over for each chapter.  Example::
 
   .. toctree::
      :hidden:
      :caption: Table of Contents
      :numbered:
 
-Reminder to delineate chapters and sections using the formatting in 
+Remember to delineate chapters and sections using the formatting in 
 :ref:`create-chapters`.
 
 To limit the number of sections visible in the table of
-contents to 4::
+contents to four::
 
   :numbered: 4
 
-Change the number to get the desired number of visible sections.
+The METplus team has decided to allow four levels of depth in the
+table of contents, but the number can be changed to get the desired
+number of visible levels.
+
 
 Here is some more information on the
-`Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_.
+`Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_
+(aka toctree directive).
 
 Numbering sections or bullets
 -----------------------------
@@ -127,14 +135,15 @@ Please note, if there are extra spaces before or after the asterisk,
 it will change how the list looks.  Be careful.
 
 Here is some more information on 
-`Sphinx bulleted and numbered sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
+`Sphinx bulleted and numbered sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks>`_.
 
-code blocks
+Code Blocks
 -----------
 
-Code blocks are a quick and easy way to bring attention to running code.
-Start the code below and indent 2 spaces for the actual code.  
-The space above and below are necessary or it won't work.
+Code blocks are a quick and easy way to bring attention to code snippets.
+Start the code snippet below the code-block directive and indent two
+spaces for the actual code. The blank lines above and below are necessary
+or it won't be formatted correctly.
 Example::
 
   (blank line above)
@@ -144,10 +153,9 @@ Example::
     ./run_something.py
     (blank line below)
 
-Please note:  We used to use  ".. code-block:: none".  
-But this was creating problems.  
-It is possible to use the name of the program, such as 
-"python" or "bash instead of "none".
+In the example above, “ini” is used as the language specified for the code
+block.  Other examples of languages that can be used are, for example,
+“yaml”, “javascript”, “html”, “shell”, “xml”, and “none”.
 
 Here is more information about 
 `Sphinx code blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`_.
@@ -155,27 +163,26 @@ Here is more information about
 Bold
 ----
 
-How to bold:
+**How to bold:**
 
-  * To make text bold use 2 asterisks before and after the bold section.
-    Example::  
+To make text bold use two asterisks before and after the text. Example::  
     
       **Bolded text** 
       
-  * It will look like this on the web:  **Bolded text**
+It will look like this on the web:  **Bolded text**
 
-Also note, if just an asterisk is needed within a bolded section, 
-use a backslash \. Or the bolding won’t work.
+Note that if an asterisk is needed within a bolded section, 
+use a backslash (\) to escape the asterisk.
 Example::
 
   **Name_everything\*.txt**
   
-How it will look on the web: **Name_everything\*.txt**
+It will look like this on the web: **Name_everything\*.txt**
 
 Here is more information about 
 `Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
 
-What to bold:
+**What to bold:**
 
   * Variables (e.g. **MET_INSTALL_DIR, INPUT_BASE, METCALCPY_HOME**, etc.)
   * Filenames (**line_defaults.yaml, contour_defaults.yaml, defaults.conf**, etc.)
