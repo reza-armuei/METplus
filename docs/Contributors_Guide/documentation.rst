@@ -87,9 +87,9 @@ table of contents, but the number can be changed to get the desired
 number of visible levels.
 
 
-Here is some more information on the
+See
 `Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_
-(aka toctree directive).
+for more information on the toctree directive.
 
 Numbering sections or bullets
 -----------------------------
@@ -134,8 +134,9 @@ It will look like this on the web:
 Please note, if there are extra spaces before or after the asterisk, 
 it will change how the list looks.  Be careful.
 
-Here is some more information on 
-`Sphinx bulleted and numbered sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks>`_.
+See
+`Sphinx bulleted and numbered sections <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks>`_
+for more information.
 
 Code Blocks
 -----------
@@ -157,8 +158,9 @@ In the example above, “ini” is used as the language specified for the code
 block.  Other examples of languages that can be used are, for example,
 “yaml”, “javascript”, “html”, “shell”, “xml”, and “none”.
 
-Here is more information about 
-`Sphinx code blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`_.
+See
+`Sphinx code blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block>`_
+for more information.
 
 Bold
 ----
@@ -179,8 +181,9 @@ Example::
   
 It will look like this on the web: **Name_everything\*.txt**
 
-Here is more information about 
-`Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
+See
+`Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_
+for more information.
 
 **What to bold:**
 
