@@ -312,7 +312,11 @@ resulting in the following displayed text:
 
   Here is a symbolic footnote reference [*]_.
   .. [*] This is the footnote.
-	 
+
+An example of the usage of footnotes in reStructured text can be seen in the
+`METplus docs/index.rst file <https://raw.githubusercontent.com/dtcenter/METplus/develop/docs/index.rst>`_
+and displayed in ReadTheDocs `here <https://metplus.readthedocs.io/en/develop/index.html>`_.
+     
 See
 `Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_.
 for more information.
