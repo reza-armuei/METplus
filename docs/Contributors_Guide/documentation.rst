@@ -25,49 +25,51 @@ along with some additional METplus component specific conventions.
 Defining Chapters and Sections
 ------------------------------
 
-Chapter and section headers are created by underlining 
-the section title with one of the below punctuation characters.
-This must be EXACTLY as long as the text line or there will be a 
-warning message (e.g. WARNING: Title underline too short.) 
-In the **documentation_warnings.log** there will be a line number
-and the message, "WARNING: Title underline too short." Or too long.
-  
-The chapter title has the asterisks above and below to make it
-stand out. An overline above isn’t necessary but it has become a
-convention for the METplus documentation. If the overline and
+The METplus documentation uses the
+`reStructured Text Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`_
+documentation for defining section formatting::
+
+  # with overline, for parts (e.g. the RTD documentation for the component
+  (i.e. docs/index.rst), each guide (e.g. User's Guide, Contributor's Guide)
+  (i.e. docs/Users_Guide/index.rst, docs/Contributors_Guide/index.rst))
+  * with overline, for chapters
+  = for sections
+  - for subsections (this is a dash, not an underline)
+  ^ for subsubsections
+  " for paragraphs (as of yet, this isn't used in the METplus documentation)
+
+Part (e.g. User's Guide, Contributor's Guide) and chapter (e.g. Overview,
+Coding Standards) headers are created by underlining and overlining the
+header name using the appropriate character as described above. When using
+the underline and overline formatting, their lengths must be identical and
+should be the same length as the header text. If the overline and
 underline are not the same length there will be a error
-message (i.e. CRITICAL: Title overline & underline mismatch.)
+message::
+
+  CRITICAL: Title overline & underline mismatch
+
+When formatting headers, the length of the underline must be at least as
+long as the title itself or there will be a warning message::
+
+  WARNING: Title underline too short
+  
 Here is an example of a chapter title::
   
   *************
   Chapter Title
   *************
   
-
 Include one line of whitespace below the last line of asterisks or it won't be
 formatted properly.
 
-Below is the 
-`convention <https://metplus.readthedocs.io/en/feature_1667_updating_overview/Contributors_Guide/documentation.html#conventions>`_ 
-that is used in the
-`reStructured Text Primer <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections>`_ and METplus::
-  
-  # with overline, for parts (e.g. the RTD documentation for the component 
-    (i.e. docs/index.rst), each guide (e.g. User's Guide, Contributor's Guide) 
-    (i.e. docs/Users_Guide/index.rst, docs/Contributors_Guide/index.rst))
-  * with overline, for chapters
-  = for sections
-  - for subsections (this is a dash, not an underline.)
-  ^ for subsubsections
-  " for paragraphs (as of yet, this isn't used in the METplus documentation.)
 
-Updating the index.rst File for Numbering Chapters and Sections
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Updating index.rst for Numbering Chapters and Sections
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Add ":numbered:" in the **index.rst** file under the "toctree" directive
 in order to add numbers to the chapters and sections.  
-This needs to be added at the index level to keep the numbers 
-from starting over for each chapter.  Example::
+":numbered:" needs to be added at the index level to keep the numbers 
+from restarting for each chapter.  Example::
 
   .. toctree::
      :hidden:
@@ -91,8 +93,8 @@ See
 `Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_
 for more information on the toctree directive.
 
-Numbering sections or bullets
------------------------------
+Numbered and Bulleted Lists
+---------------------------
 
 It is possible to use actual numbers or "#." to
 create a numbered list. Here are some examples::
@@ -102,7 +104,7 @@ create a numbered list. Here are some examples::
 
   #. This text block will be indented.
 
-It will look like this on the web:
+resulting in the following displayed text:
 
 1.
 Start the text section below for no indentation.
@@ -121,7 +123,7 @@ include a blank line and indents.  Example::
 
   * Item 3
 
-It will look like this on the web:
+resulting in the following displayed text:
 
 * Item 1  
 * Item 2
@@ -171,7 +173,7 @@ To make text bold use two asterisks before and after the text. Example::
     
       **Bolded text** 
       
-It will look like this on the web:  **Bolded text**
+Results in the following displayed text:  **Bolded text**
 
 Note that if an asterisk is needed within a bolded section, 
 use a backslash (\) to escape the asterisk.
@@ -179,7 +181,7 @@ Example::
 
   **Name_everything\*.txt**
   
-It will look like this on the web: **Name_everything\*.txt**
+Results in the following displayed text: **Name_everything\*.txt**
 
 See
 `Sphinx documentation for bolding and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_
@@ -193,41 +195,46 @@ for more information.
 Italics
 -------
 
-How to italicize:
+**How to italicize:**
 
-  * To italicize text use an asterisk before and after the italics section.
-    Example::
+To italicize text use an asterisk before and after the text. Example::
       
       *Italicized text* 
       
-  * It will look like this on the web: *Italicized text*
+Results in the following displayed text: *Italicized text*
 
-Here is more information about 
+See
 `Sphinx documentation for italicizing and inline text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#inline-markup>`_.
+for more information.
 
+**What to italicize:**
 
-What to italicize:
-
-  * Paths and Directories are italicized.
-  * If it is a full path and a file name, use italics. 
+  * Paths and directories are italicized.
+  * If the path includes a file name, use italics. 
     This was used a lot in METplotpy, 
     Example: *$METPLOTPY_SOURCE/METplotpy/test/ens_ss/ens_ss.data* 
-  * Italics for values to options.
 
-Underlining
------------
 
-Please DO NOT underline words in Sphinx.  It is possible to make Sphinx
-underline things but it goes against the natural order of things.
+Underline
+---------
 
-If an underline is used with no text above or below it, 
-this will create a thin dividing line in the document.
-These are acceptable to use.
-Example::
+The use of underlines in not recommended.  Underlining is not part of
+Sphinx's reStructuredText specifications.  Underlines can be used as
+transition markers.  See the :ref:`transition_marker` section.
+
+.. _transition_marker:
+
+Transition Markers
+------------------
+
+The syntax for a transition marker is a horizontal line of four or more
+repeated punctuation characters. The syntax is the same as section title
+underlines without title text. Transition markers require blank lines
+before and after::
 
   ___________________
 
-It will look like this on the web:
+resulting in the following:
 
 _________________
 
@@ -235,34 +242,81 @@ _________________
 Footnotes
 ---------
 
-Footnotes are used in the 
-`MET version notes <https://met.readthedocs.io/en/develop/index.html>`_.
-often but here is an example::
+*Footnote references* consist of a set of square-brackets followed by a trailing
+underscore.
 
-  [#]_  Use this where the footnote will go in the paragraph.  # will fill in with a number
-  .. [#] This is the actual footnote.
+Each *footnote* consists of an explicit markup start (".. "), a left square
+bracket, the footnote label, a right square bracket, and whitespace,
+followed by indented body elements.
 
-Another option is to use text in the footnotes, to keep the numbering the same
-for each organization. Example::
- 
-  PersonA [#NCAR]_
-  PersonB [#UCAR]_
-  PersonC [#NCAR]_
+Footnote labels are one of:
+
+  * one of more digits (i.e. a number),
+  * a single "#" (denoting auto-numbered footnotes),
+  * a "#" followed by a simple reference name, or
+  * a single "*" (denoting auto-symbol footnotes
+
+See the examples of each type of footnote label, with footnotes references and
+footnotes, below.
+    
+An example of a digit footnote label is::
+
+  Each footnote reference consists of a square-bracketed label followed by a trailing underscore [1]_.
+  .. [1] `reStructuredText Markup Specification Footnote References <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#footnote-references>`_
+
+resulting in the following displayed text:
+
+  Each footnote reference consists of a square-bracketed label followed by a trailing underscore [1]_.             
+  .. [1] `reStructuredText Markup Specification Footnote References <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#footnote-references>`_  
+  
+	 
+An example of a single "#" footnote label, denoting auto-numbered footnotes, is::
+
+  [#]_ is a reference to footnote 1, and [#]_ is a reference to footnote 2.
+  .. [#] This is footnote 1.
+  .. [#] This is footnote 2.
+  .. [#] This is footnote 3.
+  [#]_ is a reference to footnote 3.
+
+resulting in the following displayed text:
+
+  [#]_ is a reference to footnote 1, and [#]_ is a reference to footnote 2.
+  .. [#] This is footnote 1. 
+  .. [#] This is footnote 2. 
+  .. [#] This is footnote 3. 
+  [#]_ is a reference to footnote 3. 
+
+An example of the "#" followed by a simple reference name footnote label is::
+
+  * PersonA [#NCAR]_
+  * PersonB [#UCAR]_
+  * PersonC [#NCAR]_
+  .. [#NCAR] National Center for Atmospheric Research
+  .. [#UCAR] University Center for Atmospheric Research
+
+resulting in the following displayed text:
+
+  * PersonA [#NCAR]_
+  * PersonB [#UCAR]_
+  * PersonC [#NCAR]_
 
   .. [#NCAR] National Center for Atmospheric Research
   .. [#UCAR] University Center for Atmospheric Research
 
-It will look like this on the web:
+An example of a single "\*" footnote label, noting auto-symbol footnotes, is::
 
-PersonA [#NCAR]_
-PersonB [#UCAR]_
-PersonC [#NCAR]_
+  Here is a symbolic footnote reference [*]_.
+  .. [*] This is the footnote.
 
-.. [#NCAR] National Center for Atmospheric Research
-.. [#UCAR] University Center for Atmospheric Research
+resulting in the following displayed text:
 
-Here is more information about 
+  Here is a symbolic footnote reference [*]_.
+  .. [*] This is the footnote.
+	 
+See
 `Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_.
+for more information.
+
 
 Commenting out text
 -------------------
@@ -287,7 +341,7 @@ Example::
     
       :math:\mathbf **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
       
-It will look like this on the web: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
+resulting in the following displayed text: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
 
 Here is more information about 
 `Sphinx documentation for referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
@@ -309,7 +363,7 @@ Example::
                \frac{1}{p_1} + \frac{1}{1-p_3} & \frac{1}{1-p_3} & 0
             \end{Bmatrix}
 
-It will look like this on the web:
+resulting in the following displayed text:
 
 .. math:: \{S^{S}_{vf}\} = \frac{1}{2}
           \begin{Bmatrix}
@@ -328,7 +382,7 @@ Example::
     
   :math:`Delta` 
       
-It will look like this on the web: :math:`\Delta`
+resulting in the following displayed text: :math:`\Delta`
 
 Command Line Syntax
 -------------------
@@ -345,8 +399,8 @@ then one more blank line below. Example::
     (blank line below)
     
     
-It will look like this on the web (Please note, this will remove one
-of the 2 colons):
+resulting in the following displayed text, noting that one of the two
+colons has been removed:
 
   Some text::
   
@@ -369,7 +423,7 @@ example of just using carriage returns:
   | All on a single
   | Line like this
 
-It will look like this on the web: 
+resulting in the following displayed text: 
 This text will Be Rendered All on a single Line like this
 
 To keep the text on separate lines, use the "|" with a
@@ -385,7 +439,7 @@ Example::
   | Like this
   blank line below
 
-It will look like this on the web:
+resulting in the following displayed text:
 
   | This text will
   | Be
@@ -404,7 +458,7 @@ Linking to another Section
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The original section being linked to will need a 
-".. _pick_a_reference_name" so it can be referenced
+".. _pick_a_reference_name:" so it can be referenced
 in the next section.  In this case we will use the 
 :ref:`user_configuration_file`.
 An example of this link can be seen
@@ -425,7 +479,7 @@ Example::
 
   Please see the :ref:`user_configuration_file`
 
-It will look like this on the web: 
+resulting in the following displayed text: 
 Please see the :ref:`user_configuration_file`
 
 Linking Using Reference Numbers
@@ -437,7 +491,7 @@ Example::
 
   Please refer to section :numref:`user_configuration_file`
 
-It will look like this on the web.  This version shows the 
+resulting in the following displayed text, which shows the 
 numbered section, not the name:  
 
 Please refer to section :numref:`user_configuration_file`
@@ -452,7 +506,7 @@ Example::
 
   :ref:`<Text to show up<user_configuration_file>`
 
-It will look like this on the web. :ref:`Text to show up<user_configuration_file>`
+resulting in the following displayed text: :ref:`Text to show up<user_configuration_file>`
 
 
 Linking to METplus Use Cases (Python code)
@@ -475,7 +529,9 @@ To make sure the web address is correct:
   * The web link should look like this example::
 
     `TCStat: Basic Use Case <../generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html>`_.
-  * It will look like this on the web page:
+
+  *  resulting in the following displayed text:
+
     `TCStat: Basic Use Case <../generated/met_tool_wrapper/StatAnalysis/StatAnalysis.html>`_.
 
 Examples of the links can be seen in this 
@@ -514,7 +570,7 @@ we will use the variable name,   "USER_SCRIPT_COMMAND"::
 
   :term:`USER_SCRIPT_COMMAND`
 
-It will look like this on the web: :term:`USER_SCRIPT_COMMAND`
+resulting in the following displayed text: :term:`USER_SCRIPT_COMMAND`
 
 This will link directly to the glossary. Here is some more information on 
 `links to a glossary <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary.html#link-a-term-to-its-a-glossary-entry>`_.
@@ -528,7 +584,7 @@ example::
 
   `DTC <https://dtcenter.org/>`_.
 
-The web link should look like this: `DTC <https://dtcenter.org/>`_.
+resulting in the following displayed text: `DTC <https://dtcenter.org/>`_.
 
 The link can also be separated from the target definition. 
 Example::
@@ -536,7 +592,7 @@ Example::
   Get the latest news at `DTC`_.
   .. _DTC: https://dtcenter.org
 
-The web link should look like this:
+resulting in the following displayed text:
 Get the latest news at `DTC`_.
 
 Images
@@ -549,7 +605,7 @@ Example::
 
   .. image:: figure/doc_image_example.png
 
-It will look like this on the web:
+resulting in the following displayed image:
 
 .. image:: figure/doc_image_example.png
    :width: 400
@@ -590,7 +646,7 @@ Below is an example::
 
    	(Return and tab over). Comments for the figure.
 
-Here is how it will look on the web:
+resulting in the following displayed text and image:
 
 .. figure:: figure/1Issue-before-created.png
 
@@ -642,7 +698,7 @@ Here is an example::
 Please note that Row 1, column 2 is blank.  A blank
 cell must be accounted for.
 
-The table will look like this on the web:
+The table will be displayed in the following way:
 
 .. list-table:: Title
    :widths: 25 25
@@ -743,7 +799,7 @@ Example::
 
      Text in the dropdown box.
 
-What it will look like on the web:
+resulting in the following display:
 
 .. dropdown:: title
 
@@ -769,7 +825,7 @@ Example::
   ADECK_FILE_PREFIX
        .. warning:: **DEPRECATED:** Please use TC_PAIRS_ADECK_TEMPLATE.
 
-What it will look like this on the web:
+resulting in the following displayed text:
 
 ADECK_FILE_PREFIX
      .. warning:: **DEPRECATED:** Please use TC_PAIRS_ADECK_TEMPLATE.
