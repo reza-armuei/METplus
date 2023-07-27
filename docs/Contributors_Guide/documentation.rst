@@ -28,9 +28,9 @@ Defining Chapters and Sections
 Chapter and section headers are created by underlining 
 the section title with one of the below punctuation characters.
 This must be EXACTLY as long as the text line or there will be a 
-warning message (e.g. WARNING: Title underline too short.) 
-In the **documentation_warnings.log** there will be a line number
-and the message, "WARNING: Title underline too short." Or too long.
+warning message
+in the **documentation_warnings.log**. There will be a line number
+and the message, such as "WARNING: Title underline too short."
   
 The chapter title has the asterisks above and below to make it
 stand out. An overline above isn’t necessary but it has become a
@@ -64,7 +64,7 @@ that is used in the
 Updating the index.rst File for Numbering Chapters and Sections
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Add ":numbered:" in the **index.rst** file under the "toctree" directive
+Add ":numbered:" in the **index.rst** file under the "toctree"
 in order to add numbers to the chapters and sections.  
 This needs to be added at the index level to keep the numbers 
 from starting over for each chapter.  Example::
@@ -91,7 +91,7 @@ See
 `Sphinx table of contents <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree>`_
 for more information on the toctree directive.
 
-Numbering sections or bullets
+Numbering Sections or Bullets
 -----------------------------
 
 It is possible to use actual numbers or "#." to
@@ -264,7 +264,7 @@ PersonC [#NCAR]_
 Here is more information about 
 `Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_.
 
-Commenting out text
+Commenting Out Text
 -------------------
 
 If notes need to be made within RST, use a
@@ -400,7 +400,7 @@ Here is some more general information on `line blocks <http://docutils.sourcefor
 Links
 -----
 
-Linking to another Section
+Linking to Another Section
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The original section being linked to will need a 
@@ -659,7 +659,7 @@ To add a table see this
 `page <https://docutils.sourceforge.io/docs/ref/rst/directives.html#list-table>`_
 which has information on list tables.
 
-Converting tables into Sphinx format list
+Converting Tables Into Sphinx Format List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If a table has already been created outside of Sphinx,
 copy the table into google sheets. Copy the first row
