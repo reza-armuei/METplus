@@ -281,7 +281,7 @@ An example of the usage of footnotes in reStructured text can be seen in the
 and displayed in ReadTheDocs `here <https://metplus.readthedocs.io/en/develop/index.html>`_.
      
 See
-`Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_.
+`Sphinx footnotes <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes>`_
 for more information.
 
 
