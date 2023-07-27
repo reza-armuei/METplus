@@ -251,47 +251,13 @@ followed by indented body elements.
 
 Footnote labels are one of:
 
-  * one of more digits (i.e. a number),
-  * a single "#" (denoting auto-numbered footnotes),
-  * a "#" followed by a simple reference name, or
-  * a single "*" (denoting auto-symbol footnotes
+  #. one of more digits (i.e. a number),
+  #. a single "#" (denoting auto-numbered footnotes),
+  #. a "#" followed by a simple reference name, or
+  #. a single "*" (denoting auto-symbol footnotes
 
-See the examples of each type of footnote label, with footnotes references and
-footnotes, below.
+METplus has typcially used only the third instance described above.
     
-An example of a digit footnote label is::
-
-  Each footnote reference consists of a square-bracketed label followed by a trailing underscore [1]_.
-
-  .. [1] `reStructuredText Markup Specification Footnote References <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#footnote-references>`_
-
-resulting in the following displayed text:
-
-  Each footnote reference consists of a square-bracketed label followed by a trailing underscore [1]_.             
-
-  .. [1] `reStructuredText Markup Specification Footnote References <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#footnote-references>`_  
-  
-	 
-An example of a single "#" footnote label, denoting auto-numbered footnotes, is::
-
-  [#]_ is a reference to footnote 1, and [#]_ is a reference to footnote 2.
-
-  .. [#] This is footnote 1.
-  .. [#] This is footnote 2.
-  .. [#] This is footnote 3.
-
-  [#]_ is a reference to footnote 3.
-
-resulting in the following displayed text:
-
-  [#]_ is a reference to footnote 1, and [#]_ is a reference to footnote 2.
-
-  .. [#] This is footnote 1. 
-  .. [#] This is footnote 2. 
-  .. [#] This is footnote 3. 
-
-  [#]_ is a reference to footnote 3. 
-
 An example of the "#" followed by a simple reference name footnote label is::
 
   * PersonA [#NCAR]_
@@ -309,18 +275,6 @@ resulting in the following displayed text:
 
   .. [#NCAR] National Center for Atmospheric Research
   .. [#UCAR] University Center for Atmospheric Research
-
-An example of a single "\*" footnote label, noting auto-symbol footnotes, is::
-
-  Here is a symbolic footnote reference [*]_.
-
-  .. [*] This is the footnote.
-
-resulting in the following displayed text:
-
-  Here is a symbolic footnote reference [*]_.
-
-  .. [*] This is the footnote.
 
 An example of the usage of footnotes in reStructured text can be seen in the
 `METplus docs/index.rst file <https://raw.githubusercontent.com/dtcenter/METplus/develop/docs/index.rst>`_
