@@ -262,28 +262,34 @@ footnotes, below.
 An example of a digit footnote label is::
 
   Each footnote reference consists of a square-bracketed label followed by a trailing underscore [1]_.
+
   .. [1] `reStructuredText Markup Specification Footnote References <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#footnote-references>`_
 
 resulting in the following displayed text:
 
   Each footnote reference consists of a square-bracketed label followed by a trailing underscore [1]_.             
+
   .. [1] `reStructuredText Markup Specification Footnote References <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#footnote-references>`_  
   
 	 
 An example of a single "#" footnote label, denoting auto-numbered footnotes, is::
 
   [#]_ is a reference to footnote 1, and [#]_ is a reference to footnote 2.
+
   .. [#] This is footnote 1.
   .. [#] This is footnote 2.
   .. [#] This is footnote 3.
+
   [#]_ is a reference to footnote 3.
 
 resulting in the following displayed text:
 
   [#]_ is a reference to footnote 1, and [#]_ is a reference to footnote 2.
+
   .. [#] This is footnote 1. 
   .. [#] This is footnote 2. 
   .. [#] This is footnote 3. 
+
   [#]_ is a reference to footnote 3. 
 
 An example of the "#" followed by a simple reference name footnote label is::
@@ -291,6 +297,7 @@ An example of the "#" followed by a simple reference name footnote label is::
   * PersonA [#NCAR]_
   * PersonB [#UCAR]_
   * PersonC [#NCAR]_
+
   .. [#NCAR] National Center for Atmospheric Research
   .. [#UCAR] University Center for Atmospheric Research
 
@@ -306,11 +313,13 @@ resulting in the following displayed text:
 An example of a single "\*" footnote label, noting auto-symbol footnotes, is::
 
   Here is a symbolic footnote reference [*]_.
+
   .. [*] This is the footnote.
 
 resulting in the following displayed text:
 
   Here is a symbolic footnote reference [*]_.
+
   .. [*] This is the footnote.
 
 An example of the usage of footnotes in reStructured text can be seen in the
