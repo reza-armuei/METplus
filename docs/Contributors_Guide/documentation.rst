@@ -156,6 +156,13 @@ Example::
     ./run_something.py
     (blank line below)
 
+resulting in the following:
+
+  .. code-block:: ini
+
+    cd example
+    ./run_something.py
+    
 In the example above, “ini” is used as the language specified for the code
 block.  Other examples of languages that can be used are, for example,
 “yaml”, “javascript”, “html”, “shell”, “xml”, and “none”.
@@ -285,42 +292,49 @@ See
 for more information.
 
 
-Commenting out text
--------------------
+Comments
+--------
 
-If notes need to be made within RST, use a
-blank line above and a ".. " to comment out text.
+If comments need to be made within RST, use a blank line above and a ".. " to
+comment out text.
 Example::
 
   add blank line here
   .. Text you’d like commented out.
 
-Here is more information about 
-`Sphinx comments <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#comments>`_.
-  
+See
+`Sphinx comments <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#comments>`_
+for more information.
+
 Math Equations
 --------------
 
-To create math equations with an option to bold 
-use ":math:\mathbf". Then put what is to be
-bolded in between 2 sets of asterisks"\*\*".
+To create math equations with an option to bold use ":math:\mathbf". Then put
+what is to be bolded in between 2 sets of asterisks"\*\*".
 Example::  
     
       :math:\mathbf **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}` 
       
 resulting in the following displayed text: **1, 2, 3, 4, ...** :math:`mathbf{2^{n-1}}`
 
-Here is more information about 
-`Sphinx documentation for referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_.
+Support is provided for
+`mathematical content <https://docutils.sourceforge.io/docs/ref/rst/mathematics.html#math-syntax>`_
+with the input format being LaTeX math syntax with support for Unicode symbols.
+
+See
+`Sphinx documentation for referencing math equations <https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#role-math-numref>`_
+for more information.
 
 There are quite a few examples in
-`MET appendix C <https://met.readthedocs.io/en/develop/Users_Guide/appendixC.html#appendix-c-verification-measures>`_.
+`MET Appendix C <https://met.readthedocs.io/en/develop/Users_Guide/appendixC.html#appendix-c-verification-measures>`_.
 
-Matrix
-------
+Matrices
+--------
 
-This is not a common item.  Here is a matrix from 
-`MET SEEPS <https://met.readthedocs.io/en/develop/Users_Guide/appendixC.html#stable-equitable-error-in-probability-space-seeps>`_.
+Matrices are not frequently used in the METplus documentation, however there
+is an example in the
+`MET documentation for Stable Equitable Error in Probability Space (SEEPS)
+<https://met.readthedocs.io/en/develop/Users_Guide/appendixC.html#stable-equitable-error-in-probability-space-seeps>`_.
 Example::
 
   .. math:: \{S^{S}_{vf}\} = \frac{1}{2}
@@ -339,7 +353,7 @@ resulting in the following displayed text:
              \frac{1}{p_1} + \frac{1}{1-p_3} & \frac{1}{1-p_3} & 0
           \end{Bmatrix}
 
-Here is more information about `matrices <https://www.overleaf.com/learn/latex/Matrices>`_.
+See `Overleaf's Guide - Matrices <https://www.overleaf.com/learn/latex/Matrices>`_ for more information.
 
 Symbols
 -------
@@ -349,16 +363,19 @@ Example::
     
   :math:`Delta` 
       
-resulting in the following displayed text: :math:`\Delta`
+resulting in the following: :math:`\Delta`
 
-Command Line Syntax
--------------------
+Literal Blocks
+--------------
 
-To document command line syntax, use the "literal block" syntax.
-Indent the line two spaces with two colons at the end of the sentence, 
-with one line of white space below that,
-then four indented spaces on the next line, "Write my command here" 
-then one more blank line below. Example::
+Literal blocks are usually used for showing command line syntax and are
+typically rendered in a monospaced font. Literal blocks are introduced
+by ending a paragraph with the special marker::
+
+  ::
+     
+The literal block must be indented and separated by the surrounding text
+with a blank line above and below the text.  Example::
 
   Some text::
 
@@ -373,16 +390,18 @@ colons has been removed:
   
     Write my command here
 
-Here is some more information on 
-`Sphinx literal blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-literal-blocks>`_.
-And here is some extra detail about 
-`literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>`_.
+See
+`Sphinx literal blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#rst-literal-blocks>`_
+and
+`literal blocks <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#literal-blocks>`_
+for more information.
 
-Creating Carriage Returns and New Lines
----------------------------------------
+Line Blocks
+-----------
 
-The language, RST, does not obey carriage returns. Here is an
-example of just using carriage returns:
+Line blocks are needed where the structure of lines is significant.
+
+Having text on separate lines may be desired.  For example:
 
   | This text will
   | Be
@@ -390,12 +409,16 @@ example of just using carriage returns:
   | All on a single
   | Line like this
 
-resulting in the following displayed text: 
+but if typed on separate lines in a .rst file, the resulting displayed
+text would be:
+
 This text will Be Rendered All on a single Line like this
 
-To keep the text on separate lines, use the "|" with a
-space at the beginning of each new line.
-Also include One line of blank space above and below text.
+Note that the text is not formatted in the desired manner.
+
+To keep the text on separate lines, use the verical bar "| " prefix.  Each
+vertical bar prefix with a space indicates a new line, so line breaks are
+preserved. Include one line of blank space above and below text.
 Example::
 
   blank line above
@@ -414,40 +437,52 @@ resulting in the following displayed text:
   | On separate lines
   | Like this
 
-Here is some more information about 
-`Sphinx line blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks>`_. 
-Here is some more general information on `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>`_.
+See
+`Sphinx line blocks <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks>`_
+and `line blocks <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#line-blocks>`_
+for more information.
 
 Links
 -----
 
-Linking to another Section
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Internal Links
+^^^^^^^^^^^^^^
 
-The original section being linked to will need a 
-".. _pick_a_reference_name:" so it can be referenced
-in the next section.  In this case we will use the 
-:ref:`user_configuration_file`.
-An example of this link can be seen
-in the Getting Started Chapter section 
-:ref:`running-metplus`
-Example Wrapper Use Case::
+To support cross-referencing to locations within the same set of documentation,
+standard RST labels are used.  For this to work properly, label names
+**must be unique** throughout the entire document.
+
+To link to a section, the section being linked to will need a label name
+formatted in the following way:
+
+| .. _label-name:
+
+so it can be referenced in a different section.
+
+To reference the section with the label name in a different section, use
+the :ref: role.  For example:
+
+| :ref:`label-name`.
+
+For example, in the :ref:`running-metplus` section of the METplus User's Guide
+under "Example Wrapper Use Case" it states:
+
+* Create a :ref:`user_configuration_file` (named user_system.conf in this example).
+
+The link to "User Configuration File" is an internal link referenced in the
+following way in the .rst file:
+
+| * Create a :ref:`user_configuration_file` (named user_system.conf in this example).
+
+The syntax for the label name can be seen in the
+`systemconfiguration.rst https://raw.githubusercontent.com/dtcenter/METplus/develop/docs/Users_Guide/systemconfiguration.rst>`_
+and looks like this::
 
   .. _user_configuration_file:
          
   User Configuration File 
   =======================
          
-
-To add this link somewhere else 
-please use backticks and note that the first underscore isn't used
-in the reference.
-Example::
-
-  Please see the :ref:`user_configuration_file`
-
-resulting in the following displayed text: 
-Please see the :ref:`user_configuration_file`
 
 Linking Using Reference Numbers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
