@@ -464,7 +464,7 @@ the :ref: role.  For example:
 
 .. code-block::
 
-   \:ref:`label-name`
+   \:ref:\`label-name`
 
 For example, in the :ref:`running-metplus` section of the METplus User's Guide
 under "Example Wrapper Use Case" it states:
