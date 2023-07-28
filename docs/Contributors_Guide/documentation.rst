@@ -474,7 +474,9 @@ under "Example Wrapper Use Case" it states:
 The link to "User Configuration File" is an internal link referenced in the
 following way in the .rst file:
 
-| * Create a :ref:`user_configuration_file` (named user_system.conf in this example).
+.. code-block::
+   
+  \* Create a \:ref:\`user_configuration_file` (named user_system.conf in this example).
 
 The syntax for the label name can be seen in the
 `systemconfiguration.rst <https://raw.githubusercontent.com/dtcenter/METplus/develop/docs/Users_Guide/systemconfiguration.rst>`_
