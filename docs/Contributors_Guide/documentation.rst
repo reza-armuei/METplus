@@ -261,9 +261,9 @@ Footnote labels are one of:
   #. one of more digits (i.e. a number),
   #. a single "#" (denoting auto-numbered footnotes),
   #. a "#" followed by a simple reference name, or
-  #. a single "*" (denoting auto-symbol footnotes
+  #. a single "*" (denoting auto-symbol footnotes)
 
-METplus has typcially used only the third instance described above.
+METplus has typically used only the third instance described above.
     
 An example of the "#" followed by a simple reference name footnote label is::
 
